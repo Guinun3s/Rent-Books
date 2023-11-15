@@ -265,7 +265,7 @@ $livros = [
         - "Emocionante, bonito e devastadoramente inteligente, Mentirosos é absolutamente inesquecível." ― John Green, autor de A culpa é das estrelas',
         'genero' => 'suspense, misterio, terror psicológico',
         'vendedor' => 'Fabiola Coqueiro - Jequié / Bahia',
-        'imagem' => ('mentirosos.jpg')
+        'imagem' => imgLivros('mentirosos.jpg')
         
     ],
     [
@@ -325,7 +325,7 @@ $livros = [
         - “Evelyn Hugo faz Elizabeth Taylor parecer sem graça. Você vai rir com ela, chorar, sofrer, e então voltar para a primeira página e fazer tudo de novo.” ― Heather Cocks e Jessica Morgan, autoras de The Royal We',
         'genero' => 'Romance',
         'vendedor' => 'Lavi - Recife / Pernanbuco',
-        'imagem' => imgLivros('ossetemaridosdevelynhugo.jpg')
+        'imagem' => imgLivros('ossetemaridosdeevelynhugo.jpg')
 
     ],
     [
@@ -425,7 +425,7 @@ $livros = [
         Depois de seu suficiente sacrifício, Jesus de Nazaré ressuscitou dentre os mortos, vitorioso sobre a morte e o inferno, e estabeleceu sua Igreja. Por 40 dias, instruiu seus discípulos acerca do novo tempo, comissionando-os aos confins da terra, a partir de Jerusalém, para anunciar as boas-novas a toda tribo, língua e nação. Então, revestidos de poder do alto, cheios do Espírito Santo, eles partiram para anunciar salvação ao mundo. Essa mensagem, constituída de relatos daquilo que viram e ouviram, atravessou e enfrentou desertos, mares, prisões e perseguições. Ainda hoje, mais de 2.000 anos depois, a mensagem de esperança sobre os feitos do Deus-Homem reverbera em nossa sociedade – não somente devido a Cristo e seu sacrifício, mas também por causa de homens e mulheres que não se calaram a respeito das coisas que viram e ouviram.',
         'genero' => 'Informativo, Religioso',
         'vendedor' => 'Liz Perreira - Malhada de Pedras / Bahia',
-        'imagem' => imgLivros('vimoseouvimos.jpg')
+        'imagem' => imgLivros('vimoseouvimos.png')
     ],
     [
         'titulo' => 'um de nós está mentindo',
@@ -446,7 +446,8 @@ $livros = [
         'descricao' => 'Durante as férias de 1958, em uma pacata cidadezinha chamada Derry, um grupo de sete amigos começa a ver coisas estranhas. Um conta que viu um palhaço, outro que viu uma múmia. Finalmente, acabam descobrindo que estavam todos vendo a mesma coisa: um ser sobrenatural e maligno que pode assumir várias formas. É assim que Bill, Beverly, Eddie, Ben, Richie, Mike e Stan enfrentam a Coisa pela primeira vez.
         Quase trinta anos depois, o grupo volta a se encontrar. Mike, o único que permaneceu em Derry, dá o sinal ― uma nova onda de terror tomou a pequena cidade. É preciso unir forças novamente. Só eles têm a chave do enigma. Só eles sabem o que se esconde nas entranhas de Derry. Só eles podem vencer a Coisa.',
         'genero' => 'Romance, terror, suspense',
-        'vendedor' => 'Pedro Lucas - Barra/Bahia'
+        'vendedor' => 'Pedro Lucas - Barra/Bahia',
+        'imagem'=> imgLivros('itacoisa.jpg')
 
     ],
     [
@@ -467,7 +468,7 @@ $livros = [
         'descricao' => ' Depois de três meses do fim do seu relacionamento, Tiffy finalmente sai do apartamento do ex-namorado. Agora ela precisa encontrar o quanto antes um lugar barato onde morar. Contrariando os amigos, ela topa um acordo bastante inusitado.Enrolado com questões financeiras, Leon tem uma ideia pouco convencional para conseguir dinheiro rápido: anunciar seu apartamento com uma cama só, onde fica apenas no período da manhã, nos dias úteis, já que passa os fins de semana com a namorada e trabalha como enfermeiro no turno da noite.Sem nunca terem se encontrado pessoalmente, Leon e Tiffy fecham um contrato de seis meses e passam a resolver as trivialidades do dia a dia por Post-its espalhados pela casa. Mas será que essa solução aparentemente perfeita pode resistir a um ex-namorado obsessivo, uma namorada ciumenta, um irmão encrencado, dois empregos exigentes e alguns amigos superprotetores?',
         'genero' => 'Romance, Contemporâneo',
         'vendedor' => ' Elisa Castro - Salvador/Bahia',
-        'imagem' => imgLivros('tetoparador.jpg')
+        'imagem' => imgLivros('tetoparadois.jpg')
     ],
     [
         'titulo' => 'A seleção',
@@ -479,7 +480,7 @@ $livros = [
         Então America conhece pessoalmente o príncipe - e percebe que a vida com que sempre sonhou talvez não seja nada comparada ao futuro que nunca tinha ousado imaginar.',
         'genero' => 'Romance, suspense',
         'vendedor' => 'Thiago Souza - Potiguara / Paraíba',
-        'imagem' => imgLivros('tetoparadois.jpg')
+        'imagem' => imgLivros('aselecao.jpg')
     ],
     [
         'titulo' => 'A casa dos Julies, O mistério de Aurora Teagarden',
@@ -512,7 +513,7 @@ $livros = [
         'descricao' => 'Eleanor & Park é engraçado, triste, sarcástico, sincero e, acima de tudo, geek. Os personagens que dão titulo ao livro são dois jovens vizinhos de dezesseis anos. Park, descendente de coreanos e apaixonado por música e quadrinhos, não chega exatamente a ser popular, mas consegue não ser incomodado pelos colegas de escola. Eleanor, ruiva, sempre vestida com roupas estranhas e "grande" (ela pensa em si própria como gorda), é a filha mais velha de uma problemática família.',
         'genero' => 'Romance, Ficção Adolecente',
         'vendedor ' => 'João Silva -  Itabuna/Bahia',
-        'imagem' => imgLivros('eleanosepark.jpg')
+        'imagem' => imgLivros('eleanorepark.jpg')
     ],
     [
         'titulo' => 'frankenstein',
@@ -536,7 +537,7 @@ $livros = [
         Mas, à medida que a farsa dos dois se desenrola, o sorriso malicioso e os olhos cheios de desejo de Simon tornam cada vez mais difícil para Daphne lembrar que tudo não passa de fingimento. Agora, ela precisa fazer o impossível para não se apaixonar por esse conquistador inveterado que tem aversão a tudo o que ela mais quer na vida.',
         'genero' => 'Romance Histórico, Romance maduro',
         'vendedor' => 'Isabel Dutra - São Paulo',
-        'imagem' => imgLivros('odequeeeu.jpg')
+        'imagem' => imgLivros('oduqueeeu.jpg')
     ],
     [
         'titulo' => 'O conto da Aia',
@@ -556,7 +557,7 @@ $livros = [
         'descricao' => 'Há muito tempo duas famílias banham em sangue as ruas de Verona. Enquanto isso, na penumbra das madrugadas, ardem as brasas de um amor secreto. Romeu, filho dos Montéquio, e Julieta, herdeira dos Capuleto, desafiam a rixa familiar e sonham com um impossível futuro, longe da violência e da loucura. Romeu e Julieta é a primeira das grandes tragédias de William Shakespeare, e esta nova tradução de José Francisco Botelho recria com maestria o ritmo ao mesmo tempo frenético e melancólico do texto shakespeariano. Contando também com um excelente ensaio introdutório do especialista Adrian Poole, esta edição traz nova vida a uma das mais emocionantes histórias de amor já contadas.',
         'genero' => 'Romance, Romance histórico, Tragédia, Drama',
         'vendedor' => 'Jamyle Bartos - São Paulo',
-        'imagem' => imgLivros('romwuwjulieta.jpg')
+        'imagem' => imgLivros('romeuejulieta.jpg')
     ],
     [
         'titulo' => 'Água Para Elefantes',
@@ -1106,7 +1107,7 @@ $livros = [
         'descricao' => 'O texto é originalmente uma peça infantil que já rodou o país inteiro. Agora, Rodrigo França traz essa delicada história no formato de conto, presenteando o jovem leitor com uma narrativa que fala da importância de valorizarmos quem somos e de onde viemos - além de nos mostrar a força de termos laços de carinho e afeto.',
         'genero' => 'Literatura Negra',
         'vendedor' => 'Flavia Medeiros - Campina Grande/ Paraíba',
-        'imagem' => imgLivros('opquenoprincipepreto.jpg')
+        'imagem' => imgLivros('opequenoprincipepreto.jpg')
         ], 
         [
         'titulo' => 'Um defeito de cor', 
@@ -1126,7 +1127,7 @@ $livros = [
         'descricao' => 'Quando me descobri negra, Usar um turbante com cores vibrantes pela primeira vez, sentir o vento balançar os cabelos sem o peso dos produtos químicos, reconhecer nos filhos os traços da ancestralidade. Esses são alguns dos temas que Bianca Santana expurga em busca do encontro com sua negritude nesta nova edição, revista e ampliada, de Quando me descobri negra. A autora traz à tona sua trajetória de autoconhecimento e aceitação. Mesclando trechos autobiográficos à história recente do país com pinceladas de ficção, Santana narra sua passagem por um processo complexo de letramento racial, aceitação do corpo e reconhecimento familiar. Tudo isso enquanto se desvencilha do racismo brasileiro presente no bairro de classe média, na cliente branca do restaurante que acha que negros são serviçais, na ação violenta da polícia, no bullying sofrido na escola e na desigualdade salarial no trabalho. Com a altissonante frase “Tenho trinta anos, mas sou negra há dez”, a autora inicia essa jornada que há tempos vem ajudando pessoas negras a se aceitarem e pessoas brancas a compreenderem o papel que podem desempenhar na luta antirracista. Com textos curtos e um olhar acurado, Quando me descobri negra é um verdadeiro marco no processo de diversos avanços que o movimento negro vem conquistando. De Neusa Santos Souza a Chimamanda Ngozi Adichie, Bianca Santana evoca todas as formas de conhecimento para avançar nessa luta diária contra o preconceito. Valendo-se da ternura do cheiro do arroz-doce com cravo e canela servido numa roda de saberes de mulheres negras ao luto pela perda prematura e traumática do pai, Quando me descobri negra é um clássico contemporâneo que já faz parte da formação do que sonhamos para um novo projeto de nação',
         'genero' => 'Literatura Negra',
         'vendedor' => 'Vitória Calina - Belo Horizonte/Minas Gerais',
-        'imagem' => imgLivros('quandomedescoobrinegra.jpg')
+        'imagem' => imgLivros('quandomedescobrinegra.jpg')
         ], 
         [
         'titulo' => 'Secretamente sua',

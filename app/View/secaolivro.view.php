@@ -1,7 +1,7 @@
 <?php require "topo.view.php";
 include "livros.php"; 
 
-$filtraCategoria = fn($livro) => $livro["genero"] == 'Romance';
+$filtraCategoria = fn($livro) => $livro["genero"] == $_GET['categoria'] ?? null;
 $livros = array_filter($livros,$filtraCategoria);
 
 ?>
@@ -10,9 +10,9 @@ $livros = array_filter($livros,$filtraCategoria);
     <div id="pesquisa">
         <div id="pesquisa1">
             <img src="<?=img('lupa.png')?>">
-            <form>
+            <form method="get" >
                     <label>
-                        <input type="text" name="produto" placeholder="Digite o que procura...">
+                        <input type="search" name="categoria" placeholder="Digite o que procura...">
                     </label>
             </form>
         </div>
@@ -22,13 +22,15 @@ $livros = array_filter($livros,$filtraCategoria);
         </div>
     </div>
 
-    <div id="secaoaluguel">
+    <div class="secaoaluguel">
         <?php foreach($livros as $livro){ ?>
         <div class="cardaluguel">
-            <a href="<?=url_base('compra.html')?>">
+            <a href="<?=url_base('compra')?>">
             <img src="<?=$livro['imagem']?>">
-            <p><?=$livro['titulo']?></p>
-            <h2>R$ <?=$livro['preco']?></h2>
+            <div class="txtsecaoaluguel">
+                <p><?=$livro['titulo']?></p>
+                <h2>R$ <?=$livro['preco']?></h2>
+            </div>
             </a>
         </div>
         <?php } ?>

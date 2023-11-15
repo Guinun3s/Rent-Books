@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <div id="secaoaluguel">
+    <div class="secaoaluguel">
 
         <div class="cardaluguel">
             <a href="<?=url_base('compra')?>">

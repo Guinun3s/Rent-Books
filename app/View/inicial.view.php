@@ -15,34 +15,34 @@
 
             <div class="separasecao1">
                 <div class="secao1livro">
-                <a href="<?=url_base('secaolivro')?>"><h2>Romance</h2></a>
+                <a href="<?=url_base('secaolivro?categoria=Romance')?>"><h2>Romance</h2></a>
                 <img src="public/imagens/livros/orgulhoepreconceito.jpg">
                 </div>
 
                 <div class="secao1livro">
-                <h2>Fantasia</h2>
+                <a href="<?=url_base('secaolivro?categoria=Fantasia')?>"><h2>Fantasia</h2></a>
                 <img src="public/imagens/livros/narnia.jpg">
                 </div>
 
                 <div class="secao1livro">
-                <h2>Ficção</h2>
+                <a href="<?=url_base('secaolivro?categoria=Ficção')?>"><h2>Ficção</h2></a>
                 <img src="<?=imgLivros('abibliotecadameianoite.jpg')?>">
                 </div>
             </div>
 
             <div class="separasecao1">
                 <div class="secao1livro">
-                <h2>Clássico</h2>
+                <a href="<?=url_base('secaolivro?categoria=Clássico')?>"><h2>Clássico</h2></a>
                 <img src="public/imagens/livros/domcasmurro.jpg">
                 </div>
 
                 <div class="secao1livro">
-                <h2>Suspense</h2>
+                <a href="<?=url_base('secaolivro?categoria=Suspense')?>"><h2>Suspense</h2></a>
                 <img src="public/imagens/livros/agarotadolago.jpg">
                 </div>
 
                 <div class="secao1livro">
-                <h2>Mangá</h2>
+                <a href="<?=url_base('secaolivro?categoria=Mangá')?>"><h2>Mangá</h2></a>
                 <img src="public/imagens/livros/naruto.jpg">
                 </div>
             </div>
@@ -59,7 +59,7 @@
                 </div>
             </div>
 
-            <a href="formulario.html">CLIQUE AQUI</a>
+            <a href="<?=url_base('formulario')?>">CLIQUE AQUI</a>
 
         </div>
 
