@@ -23,8 +23,7 @@
 }
 
 .cardaluguel{
-    margin: 3rem;
-    padding: 0.5rem;
+    margin: 2rem 1rem 3rem 1rem;
 }
 
 .cardaluguel p{
@@ -156,6 +155,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn{
+    background-color: #E1E541;
+    padding: 1rem 10rem 1rem 10rem;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Dangrek', cursive;
 }
 
 .separasecao1 {
@@ -197,14 +206,6 @@
 
 #secao2{
     margin-bottom: 6rem;
-}
-
-#secao2 a{
-    background-color: #E1E541;
-    padding: 1rem 10rem 1rem 10rem;
-    font-size: 2rem;
-    color: white;
-    font-family: 'Dangrek', cursive;
 }
 
 #secao3{
@@ -278,8 +279,7 @@
     padding-bottom: 5rem;
     display: flex;
     align-items: center;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin: 0rem 2rem;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
@@ -523,4 +523,39 @@
     margin-top: 3rem;
     background-color: #ffffff;
     border-color: #ffffff;
+}
+
+aside{
+    background-color:#FFF;
+    max-width: 16rem;
+    border-right:1px solid #EFF3F6;
+    padding:1rem 4rem 1rem 3rem;
+    font-family: verdana;
+}
+aside h2{
+    border-bottom:1px solid #EFF3F6;
+    padding-bottom:1rem;
+    color:#4D5053;
+}
+
+aside ul{
+    list-style: none;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top:1rem;
+}
+aside ul li{
+    padding: 1rem 0;
+}
+aside ul a{
+    color:#007aff;
+    font-size:1.2rem;
+    text-decoration: none;
+}
+
+#secaoalugue{
+    display: flex;
+    background-color: #8ee6df;
+    margin: 1rem;
 }

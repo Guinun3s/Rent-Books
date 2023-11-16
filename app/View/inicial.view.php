@@ -15,38 +15,41 @@
 
             <div class="separasecao1">
                 <div class="secao1livro">
-                <a href="<?=url_base('secaolivro?categoria=Romance')?>"><h2>Romance</h2></a>
+                <a href="<?=url_base('secaolivro?genero=Romance')?>"><h2>Romance</h2></a>
                 <img src="public/imagens/livros/orgulhoepreconceito.jpg">
                 </div>
 
                 <div class="secao1livro">
-                <a href="<?=url_base('secaolivro?categoria=Fantasia')?>"><h2>Fantasia</h2></a>
+                <a href="<?=url_base('secaolivro?genero=Fantasia')?>"><h2>Fantasia</h2></a>
                 <img src="public/imagens/livros/narnia.jpg">
                 </div>
 
                 <div class="secao1livro">
-                <a href="<?=url_base('secaolivro?categoria=Ficção')?>"><h2>Ficção</h2></a>
+                <a href="<?=url_base('secaolivro?genero=Ficção')?>"><h2>Ficção</h2></a>
                 <img src="<?=imgLivros('abibliotecadameianoite.jpg')?>">
                 </div>
             </div>
 
             <div class="separasecao1">
                 <div class="secao1livro">
-                <a href="<?=url_base('secaolivro?categoria=Clássico')?>"><h2>Clássico</h2></a>
+                <a href="<?=url_base('secaolivro?genero=Clássico')?>"><h2>Clássico</h2></a>
                 <img src="public/imagens/livros/domcasmurro.jpg">
                 </div>
 
                 <div class="secao1livro">
-                <a href="<?=url_base('secaolivro?categoria=Suspense')?>"><h2>Suspense</h2></a>
+                <a href="<?=url_base('secaolivro?genero=Suspense')?>"><h2>Suspense</h2></a>
                 <img src="public/imagens/livros/agarotadolago.jpg">
                 </div>
 
                 <div class="secao1livro">
-                <a href="<?=url_base('secaolivro?categoria=Mangá')?>"><h2>Mangá</h2></a>
+                <a href="<?=url_base('secaolivro?genero=Mangá')?>"><h2>Mangá</h2></a>
                 <img src="public/imagens/livros/naruto.jpg">
                 </div>
             </div>
+            <a class="btn" href="<?=url_base('secaolivro')?>">TODOS OS LIVROS</a>
         </div>
+
+        
 
         <div id="secao2">
 
@@ -59,7 +62,7 @@
                 </div>
             </div>
 
-            <a href="<?=url_base('formulario')?>">CLIQUE AQUI</a>
+            <a class="btn" href="<?=url_base('formulario')?>">CLIQUE AQUI</a>
 
         </div>
 

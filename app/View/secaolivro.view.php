@@ -1,8 +1,32 @@
 <?php require "topo.view.php";
-include "livros.php"; 
+$livros = require "livros.php";
+$pesquisa = $_GET["pesquisa"] ?? null;   
+$genero = $_GET["genero"] ?? null;
 
-$filtraCategoria = fn($livro) => $livro["genero"] == $_GET['categoria'] ?? null;
-$livros = array_filter($livros,$filtraCategoria);
+$filtroPesquisa = function($livro) use($pesquisa){
+    $titulo = mb_strtolower($livro["titulo"]);
+    $pesquisa = mb_strtolower($pesquisa);
+    $pos = mb_strpos($titulo, $pesquisa);
+    return $pos !== false ? true : false;
+};
+
+$filtraCategoria = fn($livro) => $livro["genero"] == $genero; 
+
+if($pesquisa){
+    $livros = array_filter($livros,$filtroPesquisa);
+}
+
+if($genero){
+    $livros = array_filter($livros,$filtraCategoria);
+}
+
+$ordemAlfa = function($a, $b){
+    $tituloA = $a["titulo"];
+    $tituloB = $b["titulo"];
+    return strnatcasecmp($tituloA, $tituloB);
+};
+
+uasort($livros, $ordemAlfa);
 
 ?>
 <main>
@@ -12,7 +36,7 @@ $livros = array_filter($livros,$filtraCategoria);
             <img src="<?=img('lupa.png')?>">
             <form method="get" >
                     <label>
-                        <input type="search" name="categoria" placeholder="Digite o que procura...">
+                        <input type="search" name="pesquisa" placeholder="Digite o que procura...">
                     </label>
             </form>
         </div>
@@ -22,18 +46,34 @@ $livros = array_filter($livros,$filtraCategoria);
         </div>
     </div>
 
-    <div class="secaoaluguel">
-        <?php foreach($livros as $livro){ ?>
-        <div class="cardaluguel">
-            <a href="<?=url_base('compra')?>">
-            <img src="<?=$livro['imagem']?>">
-            <div class="txtsecaoaluguel">
-                <p><?=$livro['titulo']?></p>
-                <h2>R$ <?=$livro['preco']?></h2>
+    <div id = "secaoalugue">
+        <aside>
+            <h2>Categorias</h2>
+            <ul>
+                <li><a href="<?=url_base('secaolivro?genero=Clássico')?>">Clássico</a></li>
+                <li><a href="<?=url_base('secaolivro?genero=Ficção')?>">Ficção</a></li>
+                <li><a href="<?=url_base('secaolivro?genero=Fantasia')?>">Fantasia</a></li>
+                <li><a href="<?=url_base('secaolivro?genero=Realismo')?>">Realismo</a></li>
+                <li><a href="<?=url_base('secaolivro?genero=Romance')?>">Romance</a></li>
+                <li><a href="<?=url_base('secaolivro?genero=Infantil')?>">Infantil</a></li>
+                <li><a href="<?=url_base('secaolivro?genero=Suspense')?>">Suspense</a></li>
+                <li><a href="<?=url_base('secaolivro?genero=Aventura')?>">Aventura</a></li>
+            </ul>
+        </aside>
+        
+        <div class="secaoaluguel">
+            <?php foreach($livros as $livro){ ?>
+            <div class="cardaluguel">
+                <a href="<?=url_base('compra')?>">
+                <img src="<?=$livro['imagem']?>">
+                <div class="txtsecaoaluguel">
+                    <p><?=$livro['titulo']?></p>
+                    <h2>R$ <?=$livro['preco']?></h2>
+                </div>
+                </a>
             </div>
-            </a>
+            <?php } ?>
         </div>
-        <?php } ?>
     </div>
 
     <img src="<?=img('romances.png')?>" id="imgp2">

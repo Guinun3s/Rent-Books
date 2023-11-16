@@ -1,6 +1,6 @@
 <?php
 
-$livros = [
+return[
     [        
         'titulo' => 'A biblioteca da Meia-noite',
         'modo' => 'vender',
