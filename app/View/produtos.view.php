@@ -1,4 +1,8 @@
-<?php require "topo.view.php" ?>
+<?php require "topo.view.php";
+require "pesquisa.view.php";
+$filtraModo = fn($livro) => $livro["modo"] == 'alugar'; 
+$livros = array_filter($livros,$filtraModo);
+?>
 <main>
     <img src="<?=img('estudantis.png')?>" id="imgp">
     <div id="pesquisa">
@@ -6,7 +10,7 @@
             <img src="<?=img('lupa.png')?>">
             <form>
                     <label>
-                        <input type="text" name="produto" placeholder="Digite o que procura...">
+                        <input type="search" name="pesquisa" placeholder="Digite o que procura...">
                     </label>
             </form>
         </div>
@@ -17,28 +21,17 @@
     </div>
 
     <div class="secaoaluguel">
-
-        <div class="cardaluguel">
-            <a href="<?=url_base('compra')?>">
-            <img src="<?=imgLivros('soldameianoite.jpg')?>">
-            <p>Sol da Meia-noite - Aluguel</p>
-            <h2>R$ 5,47</h2>
-            </a>
-        </div>
-
-        <div class="cardaluguel">
-            <img src="<?=imgLivros('eassimqueacaba.jpg')?>">
-            <p>É Assim que Acaba - Aluguel</p>
-            <h2>R$ 5,15</h2>
-        </div>
-
-        <div class="cardaluguel">
-            <img src="<?=imgLivros('memoriaspostumasdebrascubas.jpg')?>">
-            <p>Memórias Póstumas de Brás Cubas - Aluguel</p>
-            <h2>R$ 2,50</h2>
-        </div>
-
-    </div>
+            <?php foreach($livros as $livro){ ?>
+            <div class="cardaluguel">
+                <a href="<?=url_base('compra')?>">
+                <img src="<?=$livro['imagem']?>">
+                <div class="txtsecaoaluguel">
+                    <p><?=$livro['titulo']?></p>
+                    <h2>R$ <?=$livro['preco']?></h2>
+                </div>
+                </a>
+            </div>
+            <?php } ?>
 
     <div id="secaoaluguel1">
         <div id="divide">
