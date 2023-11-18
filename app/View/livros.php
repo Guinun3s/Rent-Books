@@ -9,7 +9,7 @@ return[
         'descricao' => 'Aos 35 anos, Nora Seed é uma mulher cheia de talentos e poucas conquistas. Arrependida das escolhas que fez no passado, ela vive se perguntando o que poderia ter acontecido caso tivesse vivido de maneira diferente. Após ser demitida e seu gato ser atropelado, Nora vê pouco sentido em sua existência e decide colocar um ponto final em tudo. Porém, quando se vê na Biblioteca da Meia-Noite, Nora ganha uma oportunidade única de viver todas as vidas que poderia ter vivido.
 
         Neste lugar entre a vida e a morte, e graças à ajuda de uma velha amiga, Nora pode, finalmente, se mudar para a Austrália, reatar relacionamentos antigos – ou começar outros –, ser uma estrela do rock, uma glaciologista, uma nadadora olímpica... enfim, as opções são infinitas. Mas será que alguma dessas outras vidas é realmente melhor do que a que ela já tem?',
-        'genero' => 'fantasia, misterio, romance, suspense',
+        'genero' => 'fantasia', 'misterio', 'romance', 'suspense',
         'vendedor' => 'Beatriz Lima - Rio Grande / Rio Grande Do Sul',
         'imagem' => imgLivros('abibliotecadameianoite.jpg')
     ],
@@ -18,12 +18,12 @@ return[
         'modo' => 'vender',
         'autor' => 'Charlie Donlea',
         'preco' => 8.00,
-        'descricao' => 'A Garota do Lago" é um romance policial escrito por Charlie Donlea. A história se desenrola quando a jovem e talentosa repórter Ellie Whitaker é enviada para a pequena cidade de Summit Lake, na Carolina do Norte, para investigar o brutal assassinato de uma estudante universitária, Chelsea, cujo corpo foi encontrado às margens de um lago.
+        'descricao' => 'A Garota do Lago é um romance policial escrito por Charlie Donlea. A história se desenrola quando a jovem e talentosa repórter Ellie Whitaker é enviada para a pequena cidade de Summit Lake, na Carolina do Norte, para investigar o brutal assassinato de uma estudante universitária, Chelsea, cujo corpo foi encontrado às margens de um lago.
 
         Enquanto Ellie aprofunda sua investigação, ela descobre que a vida de Chelsea escondia segredos sombrios e que a cidade tem mais mistérios do que parece à primeira vista. Paralelamente, a narrativa também alterna entre o presente e o passado, revelando os eventos que levaram ao trágico desfecho e explorando os pontos de vista de Ellie e Chelsea.
         
         À medida que Ellie se aproxima da verdade, ela se vê em perigo, pois alguém parece estar determinado a impedir que a história seja revelada. O livro é uma combinação habilidosa de suspense, reviravoltas inesperadas e mistérios sinistros, mantendo os leitores ávidos por descobrir o que realmente aconteceu com a garota do lago. "A Garota do Lago" é um thriller envolvente que desvenda lentamente os segredos de um assassinato, enquanto explora temas como amizade, traição e as consequências do passado.',
-        'genero' => 'suspense, policial, misterio, romance policial',
+        'genero' => 'suspense', 'policial', 'misterio', 'romance policial',
         'vendedor' => 'Joana silva - Jequié / Bahia',
         'imagem' => imgLivros('agarotadolago.jpg')
     ],
@@ -37,7 +37,7 @@ return[
         Nesse mundo estranho e surreal, Alice encontra personagens excêntricos, como o Chapeleiro Maluco, a Lebre de Março, a Lagarta que fuma narguilé, o Gato de Cheshire e a Rainha de Copas. Ela passa por uma série de aventuras e enigmas, muitos dos quais desafiam a lógica e a razão.
         
         Ao longo de sua jornada, Alice experimenta transformações físicas, enfrenta situações absurdas e lida com a constante mudança das regras e da realidade no País das Maravilhas. O livro é uma sátira inteligente que questiona as convenções sociais e critica a lógica do mundo adulto, enquanto mergulha os leitores em um universo de imaginação desenfreada.',
-        'genero' => 'infantil, classico infantil, fantasia, mistério',
+        'genero' => 'infantil', 'classico infantil', 'fantasia', 'mistério',
         'vendedor ' => 'Patricia Lima - Guajeru / Bahia',
         'imagem' => imgLivros('alicenopaisdasmaravilhas.jpg')
     ],

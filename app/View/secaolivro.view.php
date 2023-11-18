@@ -20,29 +20,85 @@ require "pesquisa.view.php";
 
     <div id = "secaoalugue">
         <aside>
-            <h2>Categorias</h2>
-            <ul>
-                <li><a href="<?=url_base('secaolivro?genero=Clássico')?>">Clássico</a></li>
-                <li><a href="<?=url_base('secaolivro?genero=Ficção')?>">Ficção</a></li>
-                <li><a href="<?=url_base('secaolivro?genero=Fantasia')?>">Fantasia</a></li>
-                <li><a href="<?=url_base('secaolivro?genero=Realismo')?>">Realismo</a></li>
-                <li><a href="<?=url_base('secaolivro?genero=Romance')?>">Romance</a></li>
-                <li><a href="<?=url_base('secaolivro?genero=Infantil')?>">Infantil</a></li>
-                <li><a href="<?=url_base('secaolivro?genero=Suspense')?>">Suspense</a></li>
-                <li><a href="<?=url_base('secaolivro?genero=Aventura')?>">Aventura</a></li>
-            </ul>
+            <h2>Filtro</h2>
+            <form method="get">
+              <fieldset>
+              <legend>Categoria:</legend>
+              <div>
+                <input type="radio" name="genero" id="Romance" value="Romance">
+                <label for="Romance">Romance</label>
+              </div>
+              <div>
+                <input type="radio" name="genero" id="Fantasia" value="Fantasia">
+                <label for="Fantasia">Fantasia</label>
+              </div>
+              <div>
+                <input type="radio" name="genero" id="Ficção" value="Ficção">
+                <label for="Ficção">Ficção</label>
+              </div>
+              <div>
+                <input type="radio" name="genero" id="Clássico" value="Clássico">
+                <label for="Clássico">Clássico</label>
+              </div>
+              <div>
+                <input type="radio" name="genero" id="Suspense" value="Suspense">
+                <label for="Suspense">Suspense</label>
+              </div>
+              <div>
+                <input type="radio" name="genero" id="Mangá" value="Mangá">
+                <label for="Mangá">Mangá</label>
+              </div>
+              </fieldset>
+
+              <fieldset>
+              <legend>Preço:</legend>
+                <div>
+                  <input type="radio" name="preco" value="10">
+                  <label for="10">Até R$ 10,00</label>
+                </div>
+                <div>
+                  <input type="radio" name="preco" value="20">
+                  <label for="20">Até R$ 20,00</label>
+                </div>
+                <div>
+                  <input type="radio" name="preco" value="30">
+                  <label for="30">Até R$ 30,00</label>
+                </div>
+                <div>
+                  <input type="radio" name="preco" value="40">
+                  <label for="40">Até R$ 40,00</label>
+                </div>
+                <div>
+                  <label>Digite o preço:
+                    <input type="number" name="preco" step="0.1">
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Forma de venda</legend>
+                <div>
+                <input type="radio" name="modo" id="Aluguel" value="alugar">
+                <label>Aluguel</label>
+              </div>
+              <div>
+                <input type="radio" name="modo" id="Venda" value="vender">
+                <label>Venda</label>
+              </div>
+              </fieldset>
+              <button name="enviar"> Filtrar </button>
+            </form>
         </aside>
         
         <div class="secaoaluguel">
             <?php foreach($livros as $livro){ ?>
             <div class="cardaluguel">
-                <a href="<?=url_base('compra')?>">
-                <img src="<?=$livro['imagem']?>">
-                <div class="txtsecaoaluguel">
-                    <p><?=$livro['titulo']?></p>
-                    <h2>R$ <?=$livro['preco']?></h2>
-                </div>
-                </a>
+              <a href="<?=url_base('compra')?>">
+              <img src="<?=$livro['imagem']?>">
+              <div class="txtsecaoaluguel">
+                <p><?=$livro['titulo']?></p>
+                <h2>R$ <?=$livro['preco']?></h2>
+              </div>
+              </a>
             </div>
             <?php } ?>
         </div>
