@@ -3,7 +3,9 @@ $livros = require "livros.php";
 $pesquisa = $_GET["pesquisa"] ?? null;   
 $genero = $_GET["genero"] ?? null;
 $preco = $_GET["preco"] ?? null;
+$precop = $_GET["precop"] ?? null;
 $modo = $_GET["modo"] ?? null;
+$titulo = $_GET["titulo"] ?? null; 
 
 $filtroPesquisa = function($livro) use($pesquisa){
     $titulo = mb_strtolower($livro["titulo"]);
@@ -16,7 +18,11 @@ $filtraCategoria = fn($livro) => $livro["genero"] == $genero;
 
 $filtroPreco = fn($livro) => $livro["preco"] <= $preco;
 
+$filtroPrecop = fn($livro) => $livro["preco"] <= $precop;
+
 $filtroModo = fn($livro) => $livro["modo"] == $modo;
+
+$filtroTitulo = fn($livro) => $livro["titulo"] == $titulo;
 
 if($pesquisa){
     $livros = array_filter($livros,$filtroPesquisa);
@@ -30,8 +36,16 @@ if($preco){
     $livros = array_filter($livros,$filtroPreco);
 }
 
+if($precop){
+    $livros = array_filter($livros,$filtroPrecop);
+}
+
 if($modo){
     $livros = array_filter($livros,$filtroModo);
+}
+
+if($titulo){
+    $livros = array_filter($livros,$filtroTitulo);
 }
 
 $ordemAlfa = function($a, $b){

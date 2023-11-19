@@ -6,9 +6,10 @@ require "pesquisa.view.php";
     <div id="pesquisa">
         <div id="pesquisa1">
             <img src="<?=img('lupa.png')?>">
-            <form method="get" >
+            <form method="get">
                     <label>
-                        <input type="search" name="pesquisa" placeholder="Digite o que procura...">
+                        <input type="search" name="pesquisa" placeholder="Pesquise aqui o livro desejado">
+                        <button></button>
                     </label>
             </form>
         </div>
@@ -70,7 +71,7 @@ require "pesquisa.view.php";
                 </div>
                 <div>
                   <label>Digite o preço:
-                    <input type="number" name="preco" step="0.1">
+                    <input type="number" name="precop" step="0.01">
                   </label>
                 </div>
               </fieldset>
@@ -85,18 +86,19 @@ require "pesquisa.view.php";
                 <label>Venda</label>
               </div>
               </fieldset>
-              <button name="enviar"> Filtrar </button>
+              <button name="filtrar"> Filtrar </button>
+              <button name="limpar" href="<?url_base('secaolivro')?>"> Limpar filtro </button>
             </form>
         </aside>
         
         <div class="secaoaluguel">
             <?php foreach($livros as $livro){ ?>
             <div class="cardaluguel">
-              <a href="<?=url_base('compra')?>">
+              <a href="<?=url_base('compra')?>?titulo=<?=$livro['titulo']?>">
               <img src="<?=$livro['imagem']?>">
               <div class="txtsecaoaluguel">
                 <p><?=$livro['titulo']?></p>
-                <h2>R$ <?=$livro['preco']?></h2>
+                <h2>R$ <?=number_format($livro['preco'],2)?></h2>
               </div>
               </a>
             </div>

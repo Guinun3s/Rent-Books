@@ -10,7 +10,7 @@ $livros = array_filter($livros,$filtraModo);
             <img src="<?=img('lupa.png')?>">
             <form>
                     <label>
-                        <input type="search" name="pesquisa" placeholder="Digite o que procura...">
+                        <input type="search" name="pesquisa" placeholder="Pesquise aqui o livro desejado">
                     </label>
             </form>
         </div>
@@ -23,7 +23,7 @@ $livros = array_filter($livros,$filtraModo);
     <div class="secaoaluguel">
             <?php foreach($livros as $livro){ ?>
             <div class="cardaluguel">
-                <a href="<?=url_base('compra')?>">
+                <a href="<?=url_base('compra')?>?titulo=<?=$livro['titulo']?>">
                 <img src="<?=$livro['imagem']?>">
                 <div class="txtsecaoaluguel">
                     <p><?=$livro['titulo']?></p>

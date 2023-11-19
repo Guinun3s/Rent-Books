@@ -7,7 +7,7 @@ return[
         'autor' => 'Matt Haigh',
         'preco' => 22.99,
         'descricao' => 'Aos 35 anos, Nora Seed é uma mulher cheia de talentos e poucas conquistas. Arrependida das escolhas que fez no passado, ela vive se perguntando o que poderia ter acontecido caso tivesse vivido de maneira diferente. Após ser demitida e seu gato ser atropelado, Nora vê pouco sentido em sua existência e decide colocar um ponto final em tudo. Porém, quando se vê na Biblioteca da Meia-Noite, Nora ganha uma oportunidade única de viver todas as vidas que poderia ter vivido.
-
+        <br><br>
         Neste lugar entre a vida e a morte, e graças à ajuda de uma velha amiga, Nora pode, finalmente, se mudar para a Austrália, reatar relacionamentos antigos – ou começar outros –, ser uma estrela do rock, uma glaciologista, uma nadadora olímpica... enfim, as opções são infinitas. Mas será que alguma dessas outras vidas é realmente melhor do que a que ela já tem?',
         'genero' => 'fantasia', 'misterio', 'romance', 'suspense',
         'vendedor' => 'Beatriz Lima - Rio Grande / Rio Grande Do Sul',
@@ -19,9 +19,9 @@ return[
         'autor' => 'Charlie Donlea',
         'preco' => 8.00,
         'descricao' => 'A Garota do Lago é um romance policial escrito por Charlie Donlea. A história se desenrola quando a jovem e talentosa repórter Ellie Whitaker é enviada para a pequena cidade de Summit Lake, na Carolina do Norte, para investigar o brutal assassinato de uma estudante universitária, Chelsea, cujo corpo foi encontrado às margens de um lago.
-
+        <br><br>
         Enquanto Ellie aprofunda sua investigação, ela descobre que a vida de Chelsea escondia segredos sombrios e que a cidade tem mais mistérios do que parece à primeira vista. Paralelamente, a narrativa também alterna entre o presente e o passado, revelando os eventos que levaram ao trágico desfecho e explorando os pontos de vista de Ellie e Chelsea.
-        
+        <br><br>
         À medida que Ellie se aproxima da verdade, ela se vê em perigo, pois alguém parece estar determinado a impedir que a história seja revelada. O livro é uma combinação habilidosa de suspense, reviravoltas inesperadas e mistérios sinistros, mantendo os leitores ávidos por descobrir o que realmente aconteceu com a garota do lago. "A Garota do Lago" é um thriller envolvente que desvenda lentamente os segredos de um assassinato, enquanto explora temas como amizade, traição e as consequências do passado.',
         'genero' => 'suspense', 'policial', 'misterio', 'romance policial',
         'vendedor' => 'Joana silva - Jequié / Bahia',
@@ -33,9 +33,9 @@ return[
         'autor' => 'Lewis Carroll',
         'preco' => 12.30,
         'descricao' => '"Alice no País das Maravilhas" é um clássico da literatura escrito por Lewis Carroll. A história gira em torno de uma jovem chamada Alice, que, entediada com sua rotina, segue um coelho branco apressado que desaparece em um buraco. Ao seguir o coelho, Alice cai em um mundo totalmente peculiar e mágico, o País das Maravilhas.
-
+        <br><br>
         Nesse mundo estranho e surreal, Alice encontra personagens excêntricos, como o Chapeleiro Maluco, a Lebre de Março, a Lagarta que fuma narguilé, o Gato de Cheshire e a Rainha de Copas. Ela passa por uma série de aventuras e enigmas, muitos dos quais desafiam a lógica e a razão.
-        
+        <br><br>
         Ao longo de sua jornada, Alice experimenta transformações físicas, enfrenta situações absurdas e lida com a constante mudança das regras e da realidade no País das Maravilhas. O livro é uma sátira inteligente que questiona as convenções sociais e critica a lógica do mundo adulto, enquanto mergulha os leitores em um universo de imaginação desenfreada.',
         'genero' => 'infantil', 'classico infantil', 'fantasia', 'mistério',
         'vendedor ' => 'Patricia Lima - Guajeru / Bahia',
@@ -47,9 +47,9 @@ return[
         'autor' => 'Colleen Hoover',
         'preco' => 5.30,
         'descricao' => 'Filha de uma mãe problemática e um pai ausente, Beyah precisou aprender a se virar sozinha desde pequena. Sua vida foi trilhada com muitas decepeções. Mas ela está prestes a mudar a sua sorte graças a si mesma, e a mais ninguém, por conta da bolsa de estudos que ganhou para estudar em uma boa universidade. Apenas dois curtos meses separam o tão sonhado futuro do passado que tanto deseja deixar para trás. Mas uma reviravolta faz Beyah perder até mesmo a casa em que mora.
-
+        <br><br>
         Sem opção, ela recorre ao último recurso que tem e precisará passar o resto do verão na casa de praia do pai que mal conhece, da nova esposa e da filha dela que nem ao menos ouvira falar. O plano de Beyah é se manter quase invisível até poder ir para a faculdade. Mas o vizinho da casa ao lado torna tudo muito mais complicado. Afinal, é difícil ignorar o rico, bonito e misterioso Samson.
-        
+        <br><br>
         Os dois parecem não ter nada em comum. Ela viveu uma vida sem dinheiro ou amor enquanto ele tem uma família rica e privilegiada. Mas no olhar dele vive uma tristeza que apenas quem também a carrega dentro de si consegue reconhecer. E isso os torna irresístiveis um para o outro. Sem terem como fugir da atração que sentem, Beyah e Samson resolvem se dar uma chance, mas apenas até o verão terminar.',
         'genero' => 'romance, romance adolescente',
         'vendedor' => 'Joaquim Almeida - Curitiba / Paraná',
@@ -61,17 +61,17 @@ return[
         'autor' => 'V.E Schwab',
         'preco' => 6.90,
         'descricao' => 'França: 1714. Addie LaRue não queria pertercer a ninguém ou a lugar nenhum. Em um momento de desespero, a jovem faz um pacto: a vida eterna, sob a condição de ser esquecida por quem a conhecer. Um piscar de olhos, e, como um sopro, Addie se vai. Uma virada de costas, e sua existência se dissipa na memória de todos.
-
+        <br><br>
         Após tanto tempo vivendo uma existência deslumbrante, aproveitando a vida de todas as formas, fazendo uso de tantos artifícios quanto fosse possível e viajando pelo tempo e espaço, através dos séculos e continentes, da história e da arte, Addie entende seus limites e descobre ― apesar de fadada ao esquecimento ― até onde é capaz de ir para deixar sua marca no mundo.
-        
+        <br><br>
         Trezentos anos depois, em uma livraria, um acontecimento inesperado: Addie LaRue esbarra com um rapaz.
-        
+        <br><br>
         Ele enuncia cinco palavras.
-        
+        <br><br>
         Cinco palavras capazes de colocar a vida que conhecia abaixo:
-        
+        <br><br>
         "Eu me lembro de você."
-        
+        <br><br>
         Uma jornada inspirada no mito faustiano sobre busca e perda, eternidade e finitude e, acima de tudo, uma questão: até onde se vai para alcançar a liberdade? Best-seller do The New York Times e recomendado pelo Entertainment Weekly, A vida invisível de Addie LaRue é um livro inesquecível e que colocou V.E. Schwab entre as principais autoras de fantasia da atualidade.',
         'genero' => 'romance, fantasia, misterio',
         'vendedor' => 'Lucas Vieira - João Pessoa / Paraíba',
@@ -83,11 +83,11 @@ return[
         'autor' => 'Josh Malerman',
         'preco' => 16.99,
         'descricao' => '"Caixa de Pássaros" é um thriller psicológico escrito por Josh Malerman. A história se passa em um mundo pós-apocalíptico no qual uma misteriosa e aterrorizante ameaça faz com que as pessoas enlouqueçam e cometam atos violentos assim que a veem. Para sobreviver, a protagonista, Malorie, precisa viver em um estado de constante medo, evitando qualquer contato visual com o exterior.
-
+        <br><br>
         A narrativa alterna entre dois momentos: o presente, no qual Malorie viaja com seus dois filhos pequenos em um barco pelo rio, em busca de um lugar seguro, e o passado, quando ela se encontrava em uma casa com um grupo de sobreviventes, todos com os olhos vendados e vivendo no escuro para se proteger da ameaça.
-        
+        <br><br>
         O livro é um mergulho tenso na psicologia dos personagens, explorando os extremos que a necessidade de sobrevivência pode levar as pessoas. À medida que a história avança, os leitores descobrem mais sobre a origem da ameaça e os segredos sombrios que cercam esse novo mundo apocalíptico.
-        
+        <br><br>
         "Caixa de Pássaros" é um thriller emocionante e perturbador que mantém os leitores à beira de seus assentos enquanto acompanham a luta desesperada de Malorie e seus filhos para sobreviver em um mundo onde abrir os olhos pode ser fatal.',
         'genero' => 'suspense, terror, misterio, fantasia',
         'vendedor' => 'Sthefany Thomas - Sergipe/ Carira.',
@@ -100,15 +100,15 @@ return[
         'autor' => 'Stephenie Meyer',
         'preco' => 109.99,
         'descricao' => 'O "Box Crepúsculo" é uma coletânea de quatro romances escritos por Stephenie Meyer, que conta a história de um amor proibido entre uma humana, Bella Swan, e um vampiro, Edward Cullen.
-
+        <br><br>
         "Crepúsculo": O primeiro livro apresenta Bella Swan, uma adolescente que se muda para a pequena cidade de Forks, Washington, e se apaixona por Edward Cullen, um vampiro que vive com uma família de vampiros "vegetarianos" que não se alimentam de humanos. O romance floresce, mas também traz perigos, pois outros vampiros menos pacíficos entram na história.
-        
+        <br><br>
         "Lua Nova": Neste livro, Bella enfrenta uma crise emocional profunda após um incidente que a separa de Edward. Ela desenvolve uma amizade com Jacob Black, que guarda um segredo sobrenatural próprio, e a série explora os desafios de escolher entre o amor de um vampiro e o calor de um lobo.
-        
+        <br><br>
         "Eclipse": Bella está no centro de um conflito crescente entre os vampiros da família Cullen e uma legião de vampiros sanguinários. Ela também precisa tomar uma decisão sobre o casamento com Edward e a transformação em vampira.
-        
+        <br><br>
         "Amanhecer": O último livro narra a conclusão da história, com o casamento de Bella e Edward, o nascimento de sua filha, Renesmee, e os desafios que a família enfrenta devido a essa nova adição. A trama culmina em uma batalha épica e revelações que mudarão a vida dos personagens para sempre.
-        
+        <br><br>
         O "Box Crepúsculo" oferece aos leitores uma jornada envolvente e emocional através de um mundo de romance, mistério e sobrenatural, explorando temas de amor, escolhas e sacrifício em meio a um cenário de vampiros e lobisomens. É uma série que cativou uma ampla base de fãs e se tornou um fenômeno literário e cinematográfico.',
         'genero' => 'romance, romance adolescente, fantasia',
         'vendedor' => 'Mariana Mendes - São Paulo/ São Paulo',
@@ -120,13 +120,13 @@ return[
         'autor' => 'DEITEL',
         'preco' => 7.80,
         'descricao' => '"Como Programar C++" é um livro de programação escrito por Paul Deitel e Harvey Deitel. Embora eu não tenha informações específicas sobre a 5ª edição do livro (meu conhecimento se estende até janeiro de 2022), posso lhe dar uma ideia geral do que esperar com base nas edições anteriores da série.
-
+        <br><br>
         O livro "Como Programar C++" é amplamente conhecido por ser um guia abrangente e didático para aprender a linguagem de programação C++. Ele é direcionado tanto para iniciantes quanto para programadores mais experientes que desejam aprimorar suas habilidades em C++.
-        
+        <br><br>
         A obra normalmente abrange os conceitos fundamentais da programação em C++, como estruturas de controle, funções, classes, objetos, herança, polimorfismo, manipulação de arquivos, entre outros tópicos essenciais. Ele também costuma incluir exemplos de código, exercícios práticos e projetos de programação para que os leitores possam aplicar o que aprenderam.
-        
+        <br><br>
         As edições anteriores geralmente buscam fornecer uma base sólida na linguagem C++ e nas boas práticas de programação, tornando-o um recurso valioso para estudantes, programadores autodidatas e profissionais que desejam aprofundar seus conhecimentos em C++.
-        
+        <br><br>
         Portanto, se estiver interessado na 5ª edição de "Como Programar C++", você pode esperar um guia atualizado e abrangente para aprender e aprimorar suas habilidades de programação em C++. Certifique-se de conferir o conteúdo específico da edição mais recente para obter os detalhes mais recentes e relevantes.',
         'genero' => 'informativo',
         'vendedor' => 'José Barbosa - Palmas / Tocantis',
@@ -178,7 +178,7 @@ return[
         'autor' => 'Colleen Hoover',
         'preco' => 17.50,
         'descricao' => 'Em É assim que acaba, Colleen Hoover nos apresenta Lily, uma jovem que se mudou de uma cidadezinha do Maine para Boston, se formou em marketing e abriu a própria floricultura. E é em um dos terraços de Boston que ela conhece Ryle, um neurocirurgião confiante, teimoso e talvez até um pouco arrogante, com uma grande aversão a relacionamentos, mas que se sente muito atraído por ela.
-        Quando os dois se apaixonam, Lily se vê no meio de um relacionamento turbulento que não é o que ela esperava. Mas será que ela conseguirá enxergar isso, por mais doloroso que seja?
+        Quando os dois se apaixonam, Lily se vê no meio de um relacionamento turbulento que não é o que ela esperava. Mas será que ela conseguirá enxergar isso, por mais doloroso que seja?<br><br>
         É assim que acaba, é uma narrativa poderosa sobre a força necessária para fazer as escolhas certas nas situações mais difíceis. Considerada a obra mais pessoal de Hoover, o livro aborda sem medo alguns tabus da sociedade para explorar a complexidade das relações tóxicas, e como o amor e o abuso muitas vezes coexistem em uma confusão de sentimentos.',
         'genero' => 'Romance, Abusivo, Drama, Ficção',
         'vendedor' => 'Pedro Paulo - Mariana / Minas Gerais',
@@ -189,15 +189,15 @@ return[
         'modo' => 'alugar',
         'autor' => 'Stanislas Dehaene',
         'preco' => 35.00,
-        'descricao' => 'Um encontro com Felipe, de apenas 7 anos, obrigou o premiado neurocientista francês Stanislas Dehaene a rever radicalmente suas ideias sobre aprendizado. Mesmo preso a um leito de hospital e completamente cego em consequência de uma bala perdida, o menino brasileiro manteve intacta sua sede de aprender. Mas, final, como o cérebro humano consegue adaptar-se às circunstâncias reprogramando-se e, assim, continuar aprendendo? Do questionamento surgiu este poderoso livro.
+        'descricao' => 'Um encontro com Felipe, de apenas 7 anos, obrigou o premiado neurocientista francês Stanislas Dehaene a rever radicalmente suas ideias sobre aprendizado. Mesmo preso a um leito de hospital e completamente cego em consequência de uma bala perdida, o menino brasileiro manteve intacta sua sede de aprender. Mas, final, como o cérebro humano consegue adaptar-se às circunstâncias reprogramando-se e, assim, continuar aprendendo? Do questionamento surgiu este poderoso livro.<br><br>
         O autor nos conta que nosso cérebro é uma máquina extraordinária e continua sendo a melhor fonte de inspiração para os desenvolvimentos recentes da inteligência artificial. É assim que aprendemos vai até os limites da ciência da computação, da neurobiologia e da psicologia cognitiva para explicar como o aprendizado realmente acontece e como fazer melhor uso dos algoritmos de aprendizado do cérebro em nossas escolas e universidades, e também na vida cotidiana.  
-
+        <br><br>
         - “Há palavras tão familiares que obscurecem o que elas significam no lugar de iluminar. ‘Aprender’ é uma palavra assim. Parece tão simples, todo mundo aprende. Na verdade, porém, está mais para uma caixa-preta, que Dehaene abre para revelar seus incríveis segredos. Sua explicação do funcionamento dos mecanismos do cérebro é uma excelente introdução.” - The New York Times Book Review                                                                                                            
-        
+        <br><br>
         - “Este é um livro cativante, que amplia a mente, repleto de insights.” - The Sunday Times       
-        
+        <br><br>
         - “Hoje em dia, as máquinas já realizam operações que não conseguimos fazer, mas, no fim das contas, nosso cérebro nos permite chegar muito mais longe. O autor desenvolve, de forma claríssima e com rigor científico, o que chama de ‘os quatro pilares da aprendizagem’ [atenção, envolvimento ativo, feedback de erros e consolidação]. Ele selecionou as informações para fornecer sugestões bastante práticas.” - Association Française pour l’Information Scientifique
-        
+        <br><br>
         - “Um levantamento interessante de como a ciência – de escaneamentos cerebrais a testes psicológicos – está ajudando a inspirar a pedagogia.” - Financial Times',
         'genero' => 'Informativo',
         'vendedor' => 'Marina Pimentel - Araraquara / São Paulo',
@@ -881,7 +881,7 @@ return[
         'preco' => 28.53,
         'descricao' => 'Uma estonteante mistura de aventura e misticismo, ecologia e política, este romance ganhador dos prêmios Hugo e Nebula deu início a uma das mais épicas histórias de toda a ficção científica. Duna é um triunfo da imaginação, que influenciará a literatura para sempre.Esta edição inédita, com introdução de Neil Gaiman, apresenta ao leitor o universo fantástico criado por Herbert e que será adaptado ao cinema por Denis Villeneuve, diretor de A chegada e de Blade Runner 2049.',
         'genero' => 'Romance',
-        'endedor' => 'Leonardo Fibonacci - Rio de Janeiro / Rio de Janeiro',
+        'vendedor' => 'Leonardo Fibonacci - Rio de Janeiro / Rio de Janeiro',
         'imagem' => imgLivros('duna.jpg')
         ],
         [

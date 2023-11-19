@@ -1,15 +1,19 @@
 <?php require "topo.view.php";
-$livros = require "livros.php"?>
+require "pesquisa.view.php";
+?>
 <main>
     <div id="compralivro">
-        <img src="<?=$livros[0]['imagem']?>">
+        <?php foreach($livros as $livro) { ?>
+        <img src="<?=$livro['imagem']?>">
 
         <div id="compralivro2">
-            <h1><?=$livros[0]['titulo']?></h1>
-            <h3>Por <?=$livros[0]['autor']?></h3>
-            <h3>Disponível por <?=$livros[0]['vendedor']?></h3>
-            <h2>R$ <?=$livros[0]['preco']?></h2>
-            <p><?=$livros[0]['descricao']?></p>
+            <h1><?=$livro['titulo']?></h1>
+            <h3>Por <?=$livro['autor']?></h3>
+            <h3>Disponível por <?=$livro['vendedor']?></h3>
+            <h2>R$ <?=number_format($livro['preco'],2)?></h2>
+            <p><?=$livro['descricao']?></p>
+            <?php } ?>
+
         </div>
     </div>
 
