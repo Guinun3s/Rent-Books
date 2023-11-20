@@ -1,9 +1,4 @@
-<?php require "topo.view.php";
-$livros = require "livros.php";
-$carrinho = $_GET['carrinho'] ?? null;
-$filtroCarrinho = fn($livro) => $livro["carrinho"] == $carrinho;
-$livros = array_filter($livros,$filtroCarrinho);
-?>
+<?php require "topo.view.php"?>
 <main>
 
         <div id="cardcar">

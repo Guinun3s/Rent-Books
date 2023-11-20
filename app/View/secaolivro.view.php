@@ -92,6 +92,8 @@ require "pesquisa.view.php";
         </aside>
         
         <div class="secaoaluguel">
+          <div id="resultados"><h3><?=count($livros)?> resultados encontrados</h3></div>
+          <div class="secaoaluguel">
             <?php foreach($livros as $livro){ ?>
             <div class="cardaluguel">
               <a href="<?=url_base('compra')?>?titulo=<?=$livro['titulo']?>">
@@ -103,6 +105,7 @@ require "pesquisa.view.php";
               </a>
             </div>
             <?php } ?>
+        </div>
         </div>
     </div>
 

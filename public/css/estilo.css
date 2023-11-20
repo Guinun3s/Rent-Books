@@ -285,6 +285,11 @@
     align-items: flex-end;
 }
 
+#resultados{
+    color: black;
+    font-family: 'Galindo', cursive;
+}
+
 #secaoaluguel1 img{
     width: 17rem;
     margin-top: 4rem;

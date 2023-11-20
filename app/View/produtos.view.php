@@ -27,7 +27,7 @@ $livros = array_filter($livros,$filtraModo);
                 <img src="<?=$livro['imagem']?>">
                 <div class="txtsecaoaluguel">
                     <p><?=$livro['titulo']?></p>
-                    <h2>R$ <?=$livro['preco']?></h2>
+                    <h2>R$ <?=number_format($livro['preco'],2)?></h2>
                 </div>
                 </a>
             </div>
