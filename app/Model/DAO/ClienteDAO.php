@@ -2,6 +2,8 @@
 
     namespace Ifba\Model\DAO;
 
+    use Ifba\Core\Database;
+
     class ClienteDAO{
 
         public function inserir($cliente){
@@ -19,31 +21,12 @@
                 $cliente->senha
 
             ];
+
+            $banco = new Database;
+            return $banco->executar($sql, $dados);
         }
     }
 /*
-<?php
-
-    namespace Ifba\Model\DAO;
-
-    use Ifba\Core\Database;
-
-    class UsuariosDAO # Classe responsável por inserir os dados no banco
-    {
-        public function inserir($usuario){
-
-            # CÓDIGO SQL
-            $sql = "INSERT INTO usuarios (nome, email, usuario, senha, lider, turma_id) VALUES (?, ?, ?, ?, ?, ?)";
-
-            $dados = [
-                $usuario->nome,
-                $usuario->email,
-                $usuario->usuario,
-                $usuario->senha,
-                $usuario->lider,
-                $usuario->turma_id
-            ];
-
             $banco = new Database;
 
             return $banco->executar($sql, $dados);
