@@ -1,8 +1,8 @@
 <?php
 
-    namespace Ifba\Model\DAO;
+    namespace Rentbooks\Model\DAO;
 
-    use Ifba\Core\Database;
+    use Rentbooks\Core\Database;
 
     class ClienteDAO{
 

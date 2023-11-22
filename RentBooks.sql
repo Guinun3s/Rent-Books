@@ -2,33 +2,38 @@ create database RentBooks;
 use RentBooks;
 drop database RentBooks;
 
-create table Livros(
-isbnLivro int primary key not null,
+drop table livros;
+create table livros(
+isbnLivro int primary key auto_increment not null,
+titulo varchar(100) not null,
+modo varchar(10) not null,
+autor varchar(45) not null,
 preco float not null,
-idioma varchar(45),
-genero varchar(45),
-classificacao varchar(45),
-nome varchar(45),
-autor varchar(45),
-editora varchar(45),
-vendedor varchar(45),
-descricao varchar(225),
-servico varchar(45)
+descricao varchar(225) not null,
+genero varchar(45) not null,
+vendedor varchar(45) not null,
+imagem mediumblob not null
 );
 
-create table Usuario(
-idUsuario int primary key not null,
+INSERT INTO livros (titulo, modo, autor, preco, descricao, genero, vendedor, imagem) VALUES 
+('A biblioteca da Meia-noite', 'vender', 'Matt Haigh', 22.99, 'Aos 35 anos, Nora Seed é uma mulher cheia de talentos e poucas conquistas.', 'fantasia', 'Beatriz Lima - Rio Grande / Rio Grande Do Sul', 'abibliotecadameianoite.jpg');
+
+drop table usuario;
+create table usuario(
+idUsuario int primary key auto_increment not null,
+nome varchar(100) not null,
 dataNascimento date not null,
-bairro varchar(45) not null,
-cep varchar(45) not null,
-cpf varchar(11) not null,
-numero varchar(11) not null,
-rua varchar(45) not null,
+genero varchar(9) not null,
 telefone varchar(45) not null,
-email varchar(45) not null,
+cpf varchar(11) not null,
 tipoUsuario varchar(30) not null,
-genero varchar(9),
-senha varchar(16) not null
+email varchar(45) not null,
+senha varchar(16) not null,
+cep varchar(45) not null,
+cidade varchar(100)not null,
+rua varchar(45) not null,
+bairro varchar(45) not null,
+numero varchar(11) not null
 );
 
 create table Produto(
