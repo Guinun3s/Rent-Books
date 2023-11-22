@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-use Ifba\Core\Router;
+use Rentbooks\Core\Router;
 
 require_once "./vendor/autoload.php";
 require_once "./app/config.php";
@@ -30,8 +30,8 @@ function url_base($url){
 
 Router::add('/','HomeController','index');
 Router::add('__erro','ErroController','erro404');
-Router::add('login', 'HomeController', 'login');
-Router::add('criarconta', 'HomeController', 'criarconta');
+Router::add('login', 'LoginController', 'login');
+Router::add('criarconta', 'LoginController', 'criarconta');
 Router::add('carrinho', 'HomeController', 'carrinho');
 Router::add('compra', 'HomeController', 'compra');
 Router::add('compraevenda', 'HomeController', 'compraevenda');

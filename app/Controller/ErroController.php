@@ -1,8 +1,8 @@
 <?php
 
-namespace Ifba\Controller;
+namespace Rentbooks\Controller;
 
-use Ifba\Core\Controller;
+use Rentbooks\Core\Controller;
 
 class ErroController extends Controller{
 

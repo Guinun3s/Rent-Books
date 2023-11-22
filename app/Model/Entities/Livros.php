@@ -1,6 +1,6 @@
 <?php
 
-    namespace Ifba\Model\Entities;
+    namespace Rentbooks\Model\Entities;
 
     class Livros{
        private int $isbnLivro;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ifba\Core;
+namespace Rentbooks\Core;
 
 
 class Model{

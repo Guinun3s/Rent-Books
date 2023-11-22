@@ -1,6 +1,6 @@
 <?php
 
-namespace Ifba\Core;
+namespace Rentbooks\Core;
 
 
 class Router{
@@ -27,7 +27,7 @@ class Router{
 
     public static function carregaController($controlador,$metodo)
     {
-        $namespace = "\\Ifba\\Controller\\";
+        $namespace = "\\Rentbooks\\Controller\\";
         $nomecompleto = $namespace.$controlador;
         $c = new $nomecompleto();
         $c->$metodo();

@@ -1,15 +1,13 @@
 {
-    "name": "ifba/atividades",
-    "type": "project",
+    "name": "guilherme/rentbooks",
     "autoload": {
         "psr-4": {
-            "Ifba\\": "app/"
+            "Rentbooks\\": "app/"
         }
     },
     "authors": [
         {
-            "name": "Thiago Miranda",
-            "email": "thiagomiranda@ifba.edu.br"
+            "name": "Guilherme Nunes Cangussu"
         }
     ],
     "require": {}
