@@ -25,13 +25,18 @@
             $banco = new Database;
             return $banco->executar($sql, $dados);
         }
-    }
-/*
-            $banco = new Database;
 
-            return $banco->executar($sql, $dados);
+            public function buscarTodos(){
+                $sql = "SELECT * FROM Cliente";
 
+                $banco = new Database;
+                $banco->executar($sql);
+                return $banco->retornaTodos(); // Não entendi. Perguntar Thiago depois
+            }
         }
+    
+/*
+
 
         public function buscarTodos(){
             $sql = "SELECT * FROM usuarios";
