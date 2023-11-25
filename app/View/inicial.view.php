@@ -15,35 +15,35 @@
 
             <div class="separasecao1">
                 <div class="secao1livro">
-                <a href="<?=url_base('secaolivro?genero=Romance')?>"><h2>Romance</h2></a>
-                <img src="public/imagens/livros/orgulhoepreconceito.jpg">
+                <a href="<?=url_base('secaolivro?genero=romance')?>"><h2>Romance</h2></a>
+                <a href="<?=url_base('compra')?>?titulo=Orgulho e Preconceito"><img src="<?=imgLivros('orgulhoepreconceito.jpg')?>"></a>
                 </div>
 
                 <div class="secao1livro">
-                <a href="<?=url_base('secaolivro?genero=Fantasia')?>"><h2>Fantasia</h2></a>
-                <img src="public/imagens/livros/narnia.jpg">
+                <a href="<?=url_base('secaolivro?genero=fantasia')?>"><h2>Fantasia</h2></a>
+                <a href="<?=url_base('compra')?>?titulo=Nárnia"><img src="<?=imgLivros('narnia.jpg')?>"></a>
                 </div>
 
                 <div class="secao1livro">
-                <a href="<?=url_base('secaolivro?genero=Ficção')?>"><h2>Ficção</h2></a>
+                <a href="<?=url_base('secaolivro?genero=ficção')?>"><h2>Ficção</h2></a>
                 <img src="<?=imgLivros('abibliotecadameianoite.jpg')?>">
                 </div>
             </div>
 
             <div class="separasecao1">
                 <div class="secao1livro">
-                <a href="<?=url_base('secaolivro?genero=Clássico')?>"><h2>Clássico</h2></a>
-                <img src="public/imagens/livros/domcasmurro.jpg">
+                <a href="<?=url_base('secaolivro?genero=clássico')?>"><h2>Clássico</h2></a>
+                <a href="<?=url_base('compra')?>?titulo=Dom Casmurro"><img src="<?=imgLivros('domcasmurro.jpg')?>"></a>
                 </div>
 
                 <div class="secao1livro">
-                <a href="<?=url_base('secaolivro?genero=Suspense')?>"><h2>Suspense</h2></a>
-                <img src="public/imagens/livros/agarotadolago.jpg">
+                <a href="<?=url_base('secaolivro?genero=suspense')?>"><h2>Suspense</h2></a>
+                <a href="<?=url_base('compra')?>?titulo=A Garota do Lago"><img src="<?=imgLivros('agarotadolago.jpg')?>"></a>
                 </div>
 
                 <div class="secao1livro">
-                <a href="<?=url_base('secaolivro?genero=Mangá')?>"><h2>Mangá</h2></a>
-                <img src="public/imagens/livros/naruto.jpg">
+                <a href="<?=url_base('secaolivro?genero=mangá')?>"><h2>Mangá</h2></a>
+                <a href="<?=url_base('compra')?>?titulo=Naruto"><img src="<?=imgLivros('naruto.jpg')?>"></a>
                 </div>
             </div>
             <a class="btn" href="<?=url_base('secaolivro')?>">TODOS OS LIVROS</a>

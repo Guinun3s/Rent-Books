@@ -17,7 +17,7 @@ $usuario->senha = $_POST['senha'] ?? '';
 $usuario->nome = $_POST['nomecompleto'] ?? '';
 $usuario->cidade = $_POST['cidade'] ?? '';
 $dao = new UsuariosDAO();
-$resultado = $dao->inserir($usuario);  
+$dao->inserir($usuario);  
 
 ?>
 <main>

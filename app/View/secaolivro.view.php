@@ -26,27 +26,27 @@ require "pesquisa.view.php";
               <fieldset>
               <legend>Categoria:</legend>
               <div>
-                <input type="radio" name="genero" id="Romance" value="Romance">
+                <input type="radio" name="genero" id="Romance" value="romance">
                 <label for="Romance">Romance</label>
               </div>
               <div>
-                <input type="radio" name="genero" id="Fantasia" value="Fantasia">
+                <input type="radio" name="genero" id="Fantasia" value="fantasia">
                 <label for="Fantasia">Fantasia</label>
               </div>
               <div>
-                <input type="radio" name="genero" id="Ficção" value="Ficção">
+                <input type="radio" name="genero" id="Ficção" value="ficção">
                 <label for="Ficção">Ficção</label>
               </div>
               <div>
-                <input type="radio" name="genero" id="Clássico" value="Clássico">
+                <input type="radio" name="genero" id="Clássico" value="clássico">
                 <label for="Clássico">Clássico</label>
               </div>
               <div>
-                <input type="radio" name="genero" id="Suspense" value="Suspense">
+                <input type="radio" name="genero" id="Suspense" value="suspense">
                 <label for="Suspense">Suspense</label>
               </div>
               <div>
-                <input type="radio" name="genero" id="Mangá" value="Mangá">
+                <input type="radio" name="genero" id="Mangá" value="mangá">
                 <label for="Mangá">Mangá</label>
               </div>
               </fieldset>

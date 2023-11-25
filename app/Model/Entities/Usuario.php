@@ -2,7 +2,7 @@
 
     namespace Rentbooks\Model\Entities;
 
-    class Usuario{
+    class Usuario{  
         public string $nome;
         public string $dataNascimento;
         public string $genero;
