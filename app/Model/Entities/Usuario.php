@@ -17,5 +17,3 @@
         public string $bairro;
         public string $numero;
     }
-
-    /*
