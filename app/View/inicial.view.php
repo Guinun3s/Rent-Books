@@ -26,7 +26,7 @@
 
                 <div class="secao1livro">
                 <a href="<?=url_base('secaolivro?genero=ficção')?>"><h2>Ficção</h2></a>
-                <img src="<?=imgLivros('abibliotecadameianoite.jpg')?>">
+                <a href="<?=url_base('compra')?>?titulo=A biblioteca da Meia-noite"><img src="<?=imgLivros('abibliotecadameianoite.jpg')?>"></a>
                 </div>
             </div>
 
