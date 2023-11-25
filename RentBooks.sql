@@ -40,13 +40,10 @@ create table Produto(
 idProduto int primary key not null,
 codFornecedor int not null,
 codLivros int not null,
-codRevista int not null,
-codHq int not null,
+
 
 constraint FkFornecedor foreign key (codFornecedor) references Fornecedor(idFornecedor),
 constraint FkLivros foreign key (codLivros) references Livros(isbnLivro),
-constraint FkRevista foreign key (codRevista) references Revista(isbnRevista),
-constraint FkHq foreign key (codHq) references Hq(isbnHq)
 );
 
 create table alugaProduto(
