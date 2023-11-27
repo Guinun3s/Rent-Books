@@ -7,9 +7,7 @@ use Rentbooks\Core\Controller;
 class HomeController extends Controller{
 
     public function index(){
-        $titulo = "Atividades IFBA";
-        $dados = compact('titulo');
-        $this->view('inicial',$dados);
+        $this->view('inicial');
     }
 
     public function login(){
