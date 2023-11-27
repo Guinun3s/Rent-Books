@@ -24,6 +24,7 @@ class UsuariosDAO{
             $usuario->bairro,
             $usuario->numero
         ];
+        
         $banco = new Database();
         return $banco->executar($sql, $dados);
     }
