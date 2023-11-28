@@ -13,4 +13,8 @@ class LoginController extends Controller{
     public function criarconta(){
         $this->view('criarconta');
     }
+    
+    public function formulario(){
+        $this->view('formulario');
+    }
 }

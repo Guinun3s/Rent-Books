@@ -10,5 +10,4 @@ class ErroController extends Controller{
        $titulo = "Atividades IFBA";
        $this->view('404',compact('titulo'));
     }
-
 }

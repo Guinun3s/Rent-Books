@@ -3,6 +3,7 @@
     namespace Rentbooks\Model\DAO;
 
 use Rentbooks\Core\Database;
+use Rentbooks\Model\Entities\Produto;
 
     class ProdutoDAO{
 
@@ -25,6 +26,6 @@ use Rentbooks\Core\Database;
 
             $banco = new Database;
             $banco->executar($sql);
-            return $banco->retornaTodos();
+            return $banco->retornaTodos(Produto::class);
         }
     }

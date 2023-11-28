@@ -37,12 +37,12 @@ class UsuariosDAO{
         ];
         $banco = new Database;
         $banco->executar($Sql, $dados);
-        return $banco->retornaTodos();
+        return $banco->retornaTodos(Usuario::class);
     }
     public function buscarTodos(){
-        $sql = "SELECT * FROM livros";
+        $sql = "SELECT * FROM usuario";
         $banco = new Database;
         $banco->executar($sql);
-        return $banco->retornaTodos();
+        return $banco->retornaTodos(Usuario::class);
     }
 }

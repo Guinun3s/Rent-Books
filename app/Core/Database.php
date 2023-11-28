@@ -25,8 +25,12 @@ class Database{
         return $resultado;
     }
 
-    public function retornaTodos(){
-        return $this->stmt->fetchAll();
+    public function retornaTodos(string $classe){
+        return $this->stmt->fetchAll(\PDO::FETCH_CLASS,$classe);
+    }
+
+    public function retorna(string $classe){
+        return $this->stmt->fetchAll(\PDO::FETCH_CLASS,$classe);
     }
 
 }

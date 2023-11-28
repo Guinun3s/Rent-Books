@@ -1,5 +1,30 @@
-<?php require "topo.view.php";
-require "pesquisa.view.php";
+<?php
+
+use Rentbooks\model\DAO\LivrosDAO;
+use Rentbooks\Model\Entities\Livro;
+
+ require "topo.view.php";
+//require "pesquisa.view.php";
+
+$livros = new Livro();
+$dao = new LivrosDAO();
+$livros->genero = $_GET["genero"] ?? null;
+$livros->preco = $_GET["preco"] ?? null;
+$livros->modo = $_GET["modo"] ?? null;
+
+if($livros->genero){
+  $livros = $dao->filtrarGenero($livros->genero);
+}
+else if($livros->preco){
+  $livros = $dao->filtrarPreco($livros->preco);
+}
+else if($livros->modo){
+  $livros = $dao->filtrarModo($livros->modo);
+}
+else{
+  $livros = $dao->buscarTodos();
+}
+
 ?>
 <main>
 
@@ -96,11 +121,11 @@ require "pesquisa.view.php";
           <div class="secaoaluguel">
             <?php foreach($livros as $livro){ ?>
             <div class="cardaluguel">
-              <a href="<?=url_base('compra')?>?titulo=<?=$livro['titulo']?>">
-              <img src="<?=$livro['imagem']?>">
+              <a href="<?=url_base('compra')?>?titulo=<?=$livro->titulo?>">
+              <img src="<?=$livro->imagem?>">
               <div class="txtsecaoaluguel">
-                <p><?=$livro['titulo']?></p>
-                <h2>R$ <?=number_format($livro['preco'],2)?></h2>
+                <p><?=$livro->titulo?></p>
+                <h2>R$ <?=number_format($livro->preco,2)?></h2>
               </div>
               </a>
             </div>
@@ -112,4 +137,4 @@ require "pesquisa.view.php";
     <img src="<?=img('romances.png')?>" id="imgp2">
 
 </main>
-<?php require "Rodape.view.php" ?> 
+<?php require "Rodape.view.php"?> 
