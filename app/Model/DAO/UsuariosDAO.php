@@ -2,11 +2,15 @@
 
 namespace Rentbooks\model\DAO;
 
+use Rentbooks\Core\DAO;
 use Rentbooks\Core\Database;
 use Rentbooks\Model\Entities\Usuario;
 
-class UsuariosDAO{
-    public function inserir(Usuario $usuario){
+class UsuariosDAO extends DAO{
+
+    protected static string $tabela = "usuarios";
+    protected static string $classe = Usuario::class;
+    public static function inserir($usuario){
         
         $sql = "INSERT INTO usuario (nome, dataNascimento, genero, telefone, cpf, tipoUsuario, email, senha, cep, cidade, rua, bairro, numero) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
         $dados = [
@@ -30,7 +34,7 @@ class UsuariosDAO{
     }
     
     public function consultar($usuario){
-        $Sql = "SELECT * FROM usuario WHERE email='$usuario->email' AND senha='$usuario->senha'";
+        $Sql = "SELECT * FROM usuario WHERE email = ? AND senha = ?";
         $dados = [
             $usuario->email,
             $usuario->senha
@@ -39,10 +43,5 @@ class UsuariosDAO{
         $banco->executar($Sql, $dados);
         return $banco->retornaTodos(Usuario::class);
     }
-    public function buscarTodos(){
-        $sql = "SELECT * FROM usuario";
-        $banco = new Database;
-        $banco->executar($sql);
-        return $banco->retornaTodos(Usuario::class);
-    }
+    
 }

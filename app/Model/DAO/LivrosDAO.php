@@ -2,10 +2,14 @@
 
 namespace Rentbooks\model\DAO;
 
+use Rentbooks\Core\DAO;
 use Rentbooks\Core\Database;
 use Rentbooks\Model\Entities\Livro;
 
-class LivrosDAO{
+class LivrosDAO extends DAO{
+
+    protected static string $tabela = "livros";
+    protected static string $classe = Livro::class;
     
     public function filtrarGenero($genero){
         $sql = "SELECT * FROM livros WHERE genero = ?";
@@ -28,10 +32,12 @@ class LivrosDAO{
         return $banco->retorna(Livro::class);
     }
 
-    public function buscarTodos(){
-        $sql = "SELECT * FROM livros";
+    public function filtrarTitulo($titulo){
+        $sql = "SELECT * FROM livros WHERE titulo = ?";
         $banco = new Database;
-        $banco->executar($sql);
-        return $banco->retornaTodos(Livro::class);
+        $banco->executar($sql, [$titulo]);
+        return $banco->retorna(Livro::class);
     }
+
+
 }

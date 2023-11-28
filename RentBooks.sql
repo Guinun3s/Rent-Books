@@ -12,11 +12,14 @@ preco float not null,
 descricao varchar(225) not null,
 genero varchar(45) not null,
 vendedor varchar(45) not null,
-imagem mediumblob not null
+imagem varchar(100) not null
 );
 
 INSERT INTO livros (titulo, modo, autor, preco, descricao, genero, vendedor, imagem) VALUES 
-('A biblioteca da Meia-noite', 'vender', 'Matt Haigh', 22.99, 'Aos 35 anos, Nora Seed é uma mulher cheia de talentos e poucas conquistas.', 'fantasia', 'Beatriz Lima - Rio Grande / Rio Grande Do Sul', 'public/imagens/livros/abibliotecadameianoite.jpg');
+('A biblioteca da Meia-noite', 'vender', 'Matt Haigh', 22.99, 'Aos 35 anos, Nora Seed é uma mulher cheia de talentos e poucas conquistas.', 'fantasia', 'Beatriz Lima - Rio Grande / Rio Grande Do Sul', 'http://localhost/Rent-Books/public/imagens/livros/abibliotecadameianoite.jpg'),
+('A Garota do Lago', 'vender', 'Charlie Donlea', 8, 'A Garota do Lago é um romance policial escrito por Charlie Donlea.', 'suspense', 'Joana silva - Jequié / Bahia', 'http://localhost/Rent-Books/public/imagens/livros/agarotadolago.jpg'),
+('Até o Verão terminar', 'alugar', 'Colleen Hoover', 5.30, 'Filha de uma mãe problemática e um pai ausente, Beyah precisou aprender a se virar sozinha desde pequena. Sua vida foi trilhada com muitas decepeções. ', 'romance', 'Joaquim Almeida - Curitiba / Paraná', 'http://localhost/Rent-Books/public/imagens/livros/ateoveraoterminar.jpg'),
+('Memórias Póstumas de Brás Cubas', 'vender', 'Machado de Assis', 20.00, 'Após ter morrido, em pleno ano de 1869, Brás Cubas decide narrar sua história e revisitar os fatos mais importantes de sua vida, a fim de se distrair na eternidade.', 'ficção', 'Thiago Miranda - Vale do Ibirapuera / Bahia', 'http://localhost/Rent-Books/public/imagens/livros/memoriaspostumasdebrascubas.jpg');
 
 drop table usuario;
 create table usuario(
