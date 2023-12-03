@@ -3,7 +3,6 @@
 use Rentbooks\Core\Router;
 
 Router::add('/','HomeController','index');
-Router::add('__erro','ErroController','erro404');
 Router::add('login', 'LoginController', 'login');
 Router::add('criarconta', 'LoginController', 'criarconta');
 Router::add('carrinho', 'CarrinhoController', 'carrinho');

@@ -4,7 +4,7 @@ namespace Rentbooks\Model\Entities;
 
 class Livro{
 
-   public int $isbnLivro; 
+   public int $idLivro; 
    public ?string $titulo;
    public ?string $modo; 
    public ?string $autor; 

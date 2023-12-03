@@ -12,7 +12,7 @@ class UsuariosDAO extends DAO{
     protected static string $classe = Usuario::class;
     public static function inserir($usuario){
         
-        $sql = "INSERT INTO usuario (nome, dataNascimento, genero, telefone, cpf, tipoUsuario, email, senha, cep, cidade, rua, bairro, numero) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        $sql = "INSERT INTO cliente (nome, dataNascimento, genero, telefone, cpf, tipoUsuario, email, senha, cep, cidade, rua, bairro, numero) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
         $dados = [
             $usuario->nome,
             $usuario->dataNascimento,
