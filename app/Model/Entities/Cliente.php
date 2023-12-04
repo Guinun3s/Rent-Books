@@ -3,7 +3,7 @@
     namespace Rentbooks\Model\Entities;
     use Rentbooks\Core\Entity;
 
-class Usuario extends Entity{  
+class Cliente extends Entity{  
     protected ?int $idCliente;
     protected ?string $nome;
     protected ?string $dataNascimento;
@@ -24,10 +24,9 @@ class Usuario extends Entity{
     public static function getRegras() : array
     {
         return [
-            'nome' => 'obrigatorio',
+            'nome' => 'obrigatorio|maiorque::4',
             'email' => 'obrigatorio|email',
             'senha' => 'obrigatorio',
-            'dataNascimento' => 'obrigatorio',
             'cpf' => 'obrigatorio',
             'telefone' => 'obrigatorio'
         ];

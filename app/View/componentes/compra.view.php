@@ -7,9 +7,9 @@ use Rentbooks\Model\Entities\Livro;
 
 $livros = new Livro();
 $dao = new LivrosDAO();
-$livros->titulo = $_GET["titulo"] ?? null;
+$livros->idLivro = $_GET["idLivro"] ?? null;
 
-$livros = $dao->filtrarTitulo($livros->titulo);
+$livros = LivrosDao::buscarId($livros->idLivro);
 
 
 ?>

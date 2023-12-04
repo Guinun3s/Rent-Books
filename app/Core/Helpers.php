@@ -37,5 +37,30 @@ function flash($mensagem = "", $tipo = "sucesso"){
         return $retorno;
     }else{
         return "";
+    } 
+}
+
+function addFormData(array $dados){
+    $_SESSION['__form'] = $dados;
+}
+
+function linmparFormData($campo = ""){
+    if($campo == ""){
+       unset($_SESSION['__form']); 
+    }else{
+        if(isset($_SESSION['__form'][$campo])){
+            unset($_SESSION['__form'][$campo]); 
+        }
+    }   
+}
+
+function getValue(string $campo){
+    $form = $_SESSION['__form'];
+    if(isset($form[$campo])){
+        $valor = $form[$campo];
+        linmparFormData($campo);
+        return $valor;
+    }else{
+        return "";
     }
 }

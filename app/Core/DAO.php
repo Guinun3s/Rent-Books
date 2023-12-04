@@ -19,7 +19,7 @@ abstract class DAO{
     public static function buscarId($id){
         $tabela = static::$tabela;
         $banco = new Database;
-        $sql = "SELECT * FROM {$tabela} WHERE id = ?";
+        $sql = "SELECT * FROM {$tabela} WHERE id" . ucfirst($tabela) . " = ?";
         $banco->executar($sql,[$id]);
         return $banco->retorna(static::$classe);
     }

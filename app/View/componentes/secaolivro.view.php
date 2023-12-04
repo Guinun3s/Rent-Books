@@ -1,5 +1,6 @@
 <?php
 
+use Rentbooks\Core\DAO;
 use Rentbooks\model\DAO\LivrosDAO;
 use Rentbooks\Model\Entities\Livro;
 
@@ -22,7 +23,7 @@ else if($livros->modo){
   $livros = $dao->filtrarModo($livros->modo);
 }
 else{
-  $livros = $dao->buscarTodos();
+  $livros = LivrosDAO::buscarTodos();
 }
 
 ?>
@@ -121,7 +122,7 @@ else{
           <div class="secaoaluguel">
             <?php foreach($livros as $livro){ ?>
             <div class="cardaluguel">
-              <a href="<?=url_base('compra')?>?titulo=<?=$livro->titulo?>">
+              <a href="<?=url_base('compra')?>?idLivro=<?=$livro->idLivro?>">
               <img src="<?=$livro->imagem?>">
               <div class="txtsecaoaluguel">
                 <p><?=$livro->titulo?></p>

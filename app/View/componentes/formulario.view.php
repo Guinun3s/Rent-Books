@@ -3,40 +3,41 @@
     <img src="<?=img('misterios.png')?>" id="imgp">
     
     <h1 id="titform">CADASTRE-SE NO NOSSO SITE!</h1>
+    <?=flash()?>
     <form method="POST" id="forms" action=<?=url_base('cadastrarConta')?>>
         <fieldset>
         <label> Nome Completo:
-            <input type="text" name="nome" placeholder="Digite seu nome completo">
+            <input type="text" name="nome" placeholder="Digite seu nome completo" value="<?=getValue('nome')?>">
         </label>
         </fieldset>	
             <br>
         <fieldset>
         <label> Email:
-            <input type="email" name="email" placeholder="Entre com seu email">
+            <input type="email" name="email" placeholder="Entre com seu email" value="<?=getValue('email')?>">
         </label>
         </fieldset>
             <br>
         <fieldset>	
         <label>Senha (minímo 8 caractéres):
-            <input type="password" name="senha" minlength="8">
+            <input type="password" name="senha" minlength="8" value="<?=getValue('senha')?>">
         </label>
         </fieldset>
             <br>
         <fieldset>	
         <label> Data de Nascimento:
-            <input type="date" name="dataNascimento">
+            <input type="date" name="dataNascimento" value="<?=getValue('dataNascimento')?>">
         </label>
         </fieldset>
             <br>
         <fieldset>
         <label> CPF:
-            <input type="text" name="cpf" placeholder="Digite seu CPF" maxlength="11">
+            <input type="text" name="cpf" placeholder="Digite seu CPF" maxlength="11" value="<?=getValue('cpf')?>">
         </label>
         </fieldset>
             <br>
         <fieldset>	
         <label> Número de telefone:
-            <input type="tel" name="telefone" placeholder="Digite seu número de telefone" maxlength="12">
+            <input type="tel" name="telefone" placeholder="Digite seu número de telefone" maxlength="12" value="<?=getValue('telefone')?>">
         </label>
         </fieldset>
             <br>

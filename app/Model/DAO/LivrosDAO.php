@@ -8,7 +8,7 @@ use Rentbooks\Model\Entities\Livro;
 
 class LivrosDAO extends DAO{
 
-    protected static string $tabela = "livros";
+    protected static string $tabela = "livro";
     protected static string $classe = Livro::class;
     
     public function filtrarGenero($genero){

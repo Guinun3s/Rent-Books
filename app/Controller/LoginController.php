@@ -4,8 +4,8 @@ namespace Rentbooks\Controller;
 
 use Rentbooks\Core\Controller;
 use Rentbooks\Core\Validator;
-use Rentbooks\model\DAO\UsuariosDAO;
-use Rentbooks\Model\Entities\Usuario;
+use Rentbooks\model\DAO\ClientesDAO;
+use Rentbooks\Model\Entities\Cliente;
 
 class LoginController extends Controller{
 
@@ -23,18 +23,17 @@ class LoginController extends Controller{
 
     public function cadastrarConta(){
         
-        $houveErro = Validator::execute(Usuario::getRegras(),$this->post());
+        $houveErro = Validator::execute(Cliente::getRegras(),$this->post());
         if($houveErro){
-            foreach(Validator::getErros() as $erro){
-                echo "<li>{$erro}</li>";
-            }
-            die;
+            addFormData($this->post());
+            flash(Validator::getErrosListados(),'erro');
+            redireciona('formulario');
         }
 
         
 
-        $usuario = new Usuario($this->post());
-        if(UsuariosDAO::inserir($usuario)){
+        $usuario = new Cliente($this->post());
+        if(ClientesDAO::inserir($usuario)){
             flash("Cadastro realizado com sucesso!");
 
             redireciona('login');
