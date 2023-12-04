@@ -3,6 +3,8 @@
 namespace Rentbooks\Controller;
 
 use Rentbooks\Core\Controller;
+use Rentbooks\model\DAO\UsuariosDAO;
+use Rentbooks\Model\Entities\Usuario;
 
 class LoginController extends Controller{
 
@@ -16,5 +18,12 @@ class LoginController extends Controller{
     
     public function formulario(){
         $this->view('formulario');
+    }
+
+    public function cadastrarConta(){
+        $usuario = new Usuario($this->post());
+        
+        UsuariosDAO::inserir($usuario);
+
     }
 }

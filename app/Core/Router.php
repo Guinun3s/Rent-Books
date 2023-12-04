@@ -7,17 +7,30 @@ class Router{
 
     protected static array $rotas = [];
 
-    public static function add(string $caminho, string $controlador, string $metodo)
+    public static function get(string $caminho, string $controlador, string $acao){
+        static::add($caminho, $controlador, $acao, 'GET');
+    } 
+
+    public static function post(string $caminho, string $controlador, string $acao){
+        static::add($caminho, $controlador, $acao, 'POST');
+    } 
+
+    protected static function add(string $caminho, string $controlador, string $acao, string $metodo)
     {
-        static::$rotas[$caminho] = [$controlador, $metodo];      
+        static::$rotas[$caminho] = [$controlador, $acao, $metodo];      
     }
 
-    public static function execute($url)
+    public static function execute(string $url, string $metodoHTTP)
     {
         $rotas = static::$rotas;
         if( array_key_exists($url,$rotas) ){
-            [$controlador,$metodo] = $rotas[$url];
-            static::carregaController($controlador,$metodo);
+            [$controlador,$acao,$metodo] = $rotas[$url];
+            if($metodo == $metodoHTTP){
+                static::carregaController($controlador,$acao);
+            }else{
+                static::erro('naopermitido', 405);
+            }
+            
         }else{
             static::erro('404', 404);
         }

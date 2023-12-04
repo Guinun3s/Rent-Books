@@ -2,31 +2,15 @@
 use Rentbooks\model\DAO\UsuariosDAO;
 use Rentbooks\Model\Entities\Usuario; 
 
-$usuario = new Usuario();
-$usuario->dataNascimento = $_POST['datadenascimento'] ?? '';
-$usuario->bairro = $_POST['bairro'] ?? '';
-$usuario->cep = $_POST['cep'] ?? '';
-$usuario->cpf = $_POST['cpf'] ?? '';
-$usuario->numero = $_POST['numero'] ?? '';
-$usuario->rua = $_POST['rua'] ?? '';
-$usuario->telefone = $_POST['telefone'] ?? '';
-$usuario->email = $_POST['email'] ?? '';
-$usuario->senha = $_POST['senha'] ?? '';
-$usuario->nome = $_POST['nomecompleto'] ?? '';
-$usuario->cidade = $_POST['cidade'] ?? '';
-
-// O dao executa a função para inserir os dados no banco de dados.
-UsuariosDAO::inserir($usuario);  
-
 ?>
 <main>
     <img src="<?=img('misterios.png')?>" id="imgp">
     
     <h1 id="titform">CADASTRE-SE NO NOSSO SITE!</h1>
-    <form method="POST" id="forms">
+    <form method="POST" id="forms" action=<?=url_base('cadastrarConta')?>>
         <fieldset>
         <label> Nome Completo:
-            <input type="text" name="nomecompleto" placeholder="Digite seu nome completo">
+            <input type="text" name="nome" placeholder="Digite seu nome completo">
         </label>
         </fieldset>	
             <br>
@@ -44,7 +28,7 @@ UsuariosDAO::inserir($usuario);
             <br>
         <fieldset>	
         <label> Data de Nascimento:
-            <input type="date" name="datadenascimento">
+            <input type="date" name="dataNascimento">
         </label>
         </fieldset>
             <br>
