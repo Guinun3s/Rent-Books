@@ -1,7 +1,10 @@
 <?php require "topo.view.php";
-require "pesquisa.view.php";
-$filtraModo = fn($livro) => $livro["modo"] == 'alugar'; 
-$livros = array_filter($livros,$filtraModo);
+use Rentbooks\model\DAO\LivrosDAO;
+use Rentbooks\Model\Entities\Livro;
+$livros = new Livro();
+$dao = new LivrosDAO();
+$livros->modo = "alugar"; 
+$livros = $dao->filtrarModo($livros->modo);
 ?>
 <main>
     <img src="<?=img('estudantis.png')?>" id="imgp">
@@ -23,11 +26,11 @@ $livros = array_filter($livros,$filtraModo);
     <div class="secaoaluguel">
             <?php foreach($livros as $livro){ ?>
             <div class="cardaluguel">
-                <a href="<?=url_base('compra')?>?titulo=<?=$livro['titulo']?>">
-                <img src="<?=$livro['imagem']?>">
+                <a href="<?=url_base('compra')?>?titulo=<?=$livro->titulo?>">
+                <img src="<?=$livro->imagem?>">
                 <div class="txtsecaoaluguel">
-                    <p><?=$livro['titulo']?></p>
-                    <h2>R$ <?=number_format($livro['preco'],2)?></h2>
+                    <p><?=$livro->titulo?></p>
+                    <h2>R$ <?=number_format($livro->preco,2)?></h2>
                 </div>
                 </a>
             </div>

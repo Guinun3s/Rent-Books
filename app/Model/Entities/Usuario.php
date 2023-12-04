@@ -1,6 +1,7 @@
 <?php
 
     namespace Rentbooks\Model\Entities;
+    use Rentbooks\Core\Entity;
 
     class Usuario{  
         public string $nome;
