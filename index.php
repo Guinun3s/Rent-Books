@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+session_start();
+
 use Rentbooks\Core\Router;
 
 require_once "./vendor/autoload.php";

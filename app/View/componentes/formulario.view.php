@@ -1,8 +1,4 @@
-<?php require "topo.view.php";
-use Rentbooks\model\DAO\UsuariosDAO;
-use Rentbooks\Model\Entities\Usuario; 
-
-?>
+<?php require "topo.view.php" ?>
 <main>
     <img src="<?=img('misterios.png')?>" id="imgp">
     
@@ -22,7 +18,7 @@ use Rentbooks\Model\Entities\Usuario;
             <br>
         <fieldset>	
         <label>Senha (minímo 8 caractéres):
-            <input type="password" name="senha" minlength="8" required>
+            <input type="password" name="senha" minlength="8">
         </label>
         </fieldset>
             <br>
