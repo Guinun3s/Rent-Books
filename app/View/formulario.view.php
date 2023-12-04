@@ -16,8 +16,10 @@ $usuario->genero = $_POST['sexo'] ?? '';
 $usuario->senha = $_POST['senha'] ?? '';
 $usuario->nome = $_POST['nomecompleto'] ?? '';
 $usuario->cidade = $_POST['cidade'] ?? '';
+
+// O dao executa a função para inserir os dados no banco de dados.
 $dao = new UsuariosDAO();
-$resultado = $dao->inserir($usuario);  
+$dao->inserir($usuario);  
 
 ?>
 <main>

@@ -14,7 +14,7 @@ $filtroPesquisa = function($livro) use($pesquisa){
     return $pos !== false ? true : false;
 };
 
-$filtraCategoria = fn($livro) => $livro["genero"] == $genero; 
+$filtraCategoria = fn($livro) => mb_strtolower($livro["genero"]) == $genero; 
 
 $filtroPreco = fn($livro) => $livro["preco"] <= $preco;
 

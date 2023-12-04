@@ -16,8 +16,4 @@
         public string $rua;
         public string $bairro;
         public string $numero;
-
-        
-        public function alugaProduto(){}
-        public function compraProduto(){}
     }

@@ -3,9 +3,10 @@
 namespace Rentbooks\model\DAO;
 
 use Rentbooks\Core\Database;
+use Rentbooks\Model\Entities\Usuario;
 
 class UsuariosDAO{
-    public function inserir($usuario){
+    public function inserir(Usuario $usuario){
         
         $sql = "INSERT INTO usuario (nome, dataNascimento, genero, telefone, cpf, tipoUsuario, email, senha, cep, cidade, rua, bairro, numero) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
         $dados = [
@@ -23,7 +24,8 @@ class UsuariosDAO{
             $usuario->bairro,
             $usuario->numero
         ];
-        $banco = new Database;
+        
+        $banco = new Database();
         return $banco->executar($sql, $dados);
     }
     
@@ -35,12 +37,12 @@ class UsuariosDAO{
         ];
         $banco = new Database;
         $banco->executar($Sql, $dados);
-        return $banco->retornaTodos();
+        return $banco->retornaTodos(Usuario::class);
     }
     public function buscarTodos(){
         $sql = "SELECT * FROM usuario";
         $banco = new Database;
         $banco->executar($sql);
-        return $banco->retornaTodos();
+        return $banco->retornaTodos(Usuario::class);
     }
 }

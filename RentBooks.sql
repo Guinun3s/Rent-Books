@@ -16,7 +16,7 @@ imagem mediumblob not null
 );
 
 INSERT INTO livros (titulo, modo, autor, preco, descricao, genero, vendedor, imagem) VALUES 
-('A biblioteca da Meia-noite', 'vender', 'Matt Haigh', 22.99, 'Aos 35 anos, Nora Seed é uma mulher cheia de talentos e poucas conquistas.', 'fantasia', 'Beatriz Lima - Rio Grande / Rio Grande Do Sul', 'abibliotecadameianoite.jpg');
+('A biblioteca da Meia-noite', 'vender', 'Matt Haigh', 22.99, 'Aos 35 anos, Nora Seed é uma mulher cheia de talentos e poucas conquistas.', 'fantasia', 'Beatriz Lima - Rio Grande / Rio Grande Do Sul', 'public/imagens/livros/abibliotecadameianoite.jpg');
 
 drop table usuario;
 create table usuario(
@@ -26,7 +26,7 @@ dataNascimento date not null,
 genero varchar(9) not null,
 telefone varchar(45) not null,
 cpf varchar(11) not null,
-tipoUsuario varchar(30) not null,
+tipoUsuario boolean not null,
 email varchar(45) not null,
 senha varchar(16) not null,
 cep varchar(45) not null,

@@ -9,7 +9,7 @@ return[
         'descricao' => 'Aos 35 anos, Nora Seed é uma mulher cheia de talentos e poucas conquistas. Arrependida das escolhas que fez no passado, ela vive se perguntando o que poderia ter acontecido caso tivesse vivido de maneira diferente. Após ser demitida e seu gato ser atropelado, Nora vê pouco sentido em sua existência e decide colocar um ponto final em tudo. Porém, quando se vê na Biblioteca da Meia-Noite, Nora ganha uma oportunidade única de viver todas as vidas que poderia ter vivido.
         <br><br>
         Neste lugar entre a vida e a morte, e graças à ajuda de uma velha amiga, Nora pode, finalmente, se mudar para a Austrália, reatar relacionamentos antigos – ou começar outros –, ser uma estrela do rock, uma glaciologista, uma nadadora olímpica... enfim, as opções são infinitas. Mas será que alguma dessas outras vidas é realmente melhor do que a que ela já tem?',
-        'genero' => 'fantasia', 'misterio', 'romance', 'suspense',
+        'genero' => 'fantasia',
         'vendedor' => 'Beatriz Lima - Rio Grande / Rio Grande Do Sul',
         'imagem' => imgLivros('abibliotecadameianoite.jpg')
     ],
@@ -682,8 +682,8 @@ return[
     [
         'titulo' => 'Solo Leveling',
         'modo' => 'vender',
-        'autor' => 21.99,
-        'preco' => 'Kisoryong Chugong',
+        'preco' => 21.99,
+        'autor' => 'Kisoryong Chugong',
         'descricao' => 'Um mundo de masmorras e incursões! Do mais fraco ao mais poderoso! Sung Jin-woo é um Caçador rank E sem dinheiro, sem talento, sem nada. Um dia, ao entrar numa masmorra para ganhar o pão de cada dia, ele vê a morte eminente... Mas como dizem, é na crise que surgem as oportunidades. [Você ganhou o direito de se tornar um Jogador.] ― Jogador? Quer dizer que eu posso subir de nível?!',
         'genero' => 'mangá',
         'vendedor' => 'Luan Caires - Livramento de Nossa Senhora / Bahia',

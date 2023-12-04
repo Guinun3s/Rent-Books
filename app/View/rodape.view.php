@@ -1,7 +1,7 @@
 <footer id="rodape">
         <div id="imgRodape">
-        <a href="<?=url_base('')?>"><img src="<?=img('slogan.png')?>"></a>;
-            <img src="<?=img('redessociais.png')?>">;
+        <a href="<?=url_base('')?>"><img src="<?=img('slogan.png')?>"></a>
+            <img src="<?=img('redessociais.png')?>">
         </div>
             <div id="texto">
                 <p>(77) 988003459</p>
