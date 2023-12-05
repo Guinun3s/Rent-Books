@@ -17,9 +17,8 @@ class Cliente extends Entity{
     protected ?string $bairro;
     protected ?string $numero;
 
-    public function setSenha($valor){
-        $this->senha = password_hash($valor,PASSWORD_DEFAULT);
-    }
+        public function alugaProduto(){
+        }
 
     public static function getRegras() : array
     {
@@ -32,6 +31,11 @@ class Cliente extends Entity{
         ];
     }
 
-    
+    public function compraProduto(){
+            
+        }
 
 }
+        
+        
+    
