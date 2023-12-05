@@ -30,7 +30,7 @@ function flash($mensagem = "", $tipo = "sucesso"){
     }else if(empty($mensagem) && isset($_SESSION['__mensagem'])){
         [$mensagem,$tipo] = $_SESSION['__mensagem'];
         $retorno = "";
-        $retorno .= "<div class='msg {$tipo}'>";
+        $retorno .= "<div class='msg{$tipo}'>";
         $retorno .= $mensagem;
         $retorno .= "</div>";
         unset($_SESSION['__mensagem']);

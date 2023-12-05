@@ -9,11 +9,11 @@ $livros = $dao->filtrarModo($livros->modo);
 <main>
     <img src="<?=img('estudantis2.png')?>" id="imgp">
     <div id="pesquisa">
-        <div id="pesquisa1">
-            <img src="<?=img('lupa.png')?>">
-            <form>
-                    <label>
+        <div>
+            <form method="get" >
+                    <label id="pesquisa1">
                         <input type="search" name="pesquisa" placeholder="Pesquise aqui o livro desejado">
+                        <div><button><img src="<?=img('lupa.png')?>"></button></div>
                     </label>
             </form>
         </div>
@@ -26,7 +26,7 @@ $livros = $dao->filtrarModo($livros->modo);
     <div class="secaoaluguel">
             <?php foreach($livros as $livro){ ?>
             <div class="cardaluguel">
-                <a href="<?=url_base('compra')?>?titulo=<?=$livro->titulo?>">
+                <a href="<?=url_base('compra')?>?idLivro=<?=$livro->idLivro?>">
                 <img src="<?=$livro->imagem?>">
                 <div class="txtsecaoaluguel">
                     <p><?=$livro->titulo?></p>

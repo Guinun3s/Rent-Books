@@ -336,13 +336,24 @@
 }
 
 #pesquisa1 input{
-    margin-top: 0.2rem;
-    padding: 0.2rem 13rem 0.2rem 0rem;
+    border: #01455b groove 1px;
+    border-radius: 12px;
+    margin-left: 1rem;
+    width: 25em;
+    height: 2em;
+    padding: 0.4rem 6em 0.4em 0em;
+    margin-right: 1em;
 }
 
 #pesquisa1{
     display:flex;
-    align-items: flex-start;
+    align-items: center;
+
+}
+
+#pesquisa1 button{
+    border-style: none;
+    background-color: white;
 }
 
 #imgpesquisa{
@@ -361,39 +372,52 @@
     margin: 3rem 8rem 4rem 8rem;
 }
 
-#forms label{
+#forms p{
     display: flex;
     align-items: flex-start;
     margin-left: 1rem;
     color:#0d188f ;
     font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
 }
 
-#forms fieldset{
-    margin-inline-start: 2px;
-    margin-inline-end: 2px;
-    padding-block-start: 0.35em;
-    padding-inline-start: 0.75em;
-    padding-inline-end: 0.75em;
-    padding-block-end: 0.625em;
+.forms{
+    border: #01455b groove 1px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
     min-inline-size: min-content;
-    border-width: 2px;
-    border-style: groove;
-    border-color: rgb(192, 192, 192);
 }
 
 #forms input{
+    border: #01455b groove 1px;
+    border-radius: 12px;
     margin-left: 1rem;
-    padding: 0.4rem 20rem 0.4rem 0rem;
+    width: 70em;
+    height: 2.75em;
+    padding: 0.4rem 45rem 0.4rem 0rem;
 }
 
 #forms select{
     margin-left: 1rem;
 }
 
-#envio{
+#msgForms{
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
+    padding: 0.5em;
+    color:#0d188f ;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+}
+
+#msgForms textarea{
+    width: 25em;
+    height: 20em;
 }
 
 #titform{
@@ -553,14 +577,76 @@ aside ul{
 aside ul li{
     padding: 1rem 0;
 }
+
 aside ul a{
     color:#007aff;
     font-size:1.2rem;
     text-decoration: none;
 }
 
+aside div{
+    padding: 2px 10px;
+}
+
 #secaoalugue{
     display: flex;
     background-color: #8ee6df;
     margin: 1rem;
+}
+
+.filtro{
+    width: 11.5em;
+    border: #01455b solid 1px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1em;
+    padding: 0.5em 0em ;
+}
+
+#precop{
+    border: #01455b solid 1px;
+    border-radius: 12px;
+    margin-bottom: 0.5em;
+} 
+
+.filtro p{
+    padding: 0em 0em 0.5em 0.5em;
+}
+
+.btnForms{
+    background-color: #ffffff;
+    padding: 0.5em;
+    font-size: 0.8rem;
+    font-family: 'verdana', sans-serif;
+    border: #01455b solid 1px;
+    border-radius: 8px;
+}
+
+#btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 11.5em;
+}
+
+.msgsucesso{
+    background-color: #03a600;
+    border: black solid 1px;
+    border-radius: 12px;
+    padding: 1em;
+    color: white;
+    margin: 0em 6em 2em 6em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.msgerro{
+    background-color: #a60000;
+    border: black solid 1px;
+    border-radius: 12px;
+    padding: 1em;
+    color: white;
+    margin: 1em 6em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

@@ -29,12 +29,11 @@ else{
 <main>
 
     <div id="pesquisa">
-        <div id="pesquisa1">
-            <img src="<?=img('lupa.png')?>">
-            <form method="get">
-                    <label>
+        <div>
+            <form method="get" >
+                    <label id="pesquisa1">
                         <input type="search" name="pesquisa" placeholder="Pesquise aqui o livro desejado">
-                        <button></button>
+                        <div><button><img src="<?=img('lupa.png')?>"></button></div>
                     </label>
             </form>
         </div>
@@ -48,8 +47,8 @@ else{
         <aside>
             <h2>Filtro</h2>
             <form method="get">
-              <fieldset>
-              <legend>Categoria:</legend>
+              <fieldset class="filtro">
+              <p>Categoria:</p>
               <div>
                 <input type="radio" name="genero" id="Romance" value="romance">
                 <label for="Romance">Romance</label>
@@ -63,8 +62,8 @@ else{
                 <label for="Ficção">Ficção</label>
               </div>
               <div>
-                <input type="radio" name="genero" id="Clássico" value="clássico">
-                <label for="Clássico">Clássico</label>
+                <input type="radio" name="genero" id="informativo" value="informativo">
+                <label for="Clássico">Informativo</label>
               </div>
               <div>
                 <input type="radio" name="genero" id="Suspense" value="suspense">
@@ -74,10 +73,14 @@ else{
                 <input type="radio" name="genero" id="Mangá" value="mangá">
                 <label for="Mangá">Mangá</label>
               </div>
+              <div>
+                <input type="radio" name="genero" id="Poesia" value="poesia">
+                <label for="Mangá">Poesia</label>
+              </div>
               </fieldset>
 
-              <fieldset>
-              <legend>Preço:</legend>
+              <fieldset class="filtro">
+              <p>Preço:</p>
                 <div>
                   <input type="radio" name="preco" value="10">
                   <label for="10">Até R$ 10,00</label>
@@ -96,12 +99,12 @@ else{
                 </div>
                 <div>
                   <label>Digite o preço:
-                    <input type="number" name="precop" step="0.01">
+                    <input type="number" name="precop" step="0.01" id="precop">
                   </label>
                 </div>
               </fieldset>
-              <fieldset>
-                <legend>Forma de venda</legend>
+              <fieldset class="filtro">
+                <p>Forma de venda:</p>
                 <div>
                 <input type="radio" name="modo" id="Aluguel" value="alugar">
                 <label>Aluguel</label>
@@ -111,8 +114,11 @@ else{
                 <label>Venda</label>
               </div>
               </fieldset>
-              <button name="filtrar"> Filtrar </button>
-              <button name="limpar" href="<?url_base('secaolivro')?>"> Limpar filtro </button>
+              <div id="btns">
+                <button name="filtrar" class="btnForms"> Filtrar </button>
+              <button name="limpar" class="btnForms" href="<?url_base('secaolivro')?>"> Limpar filtro </button>
+              </div>
+              
             </form>
         </aside>
         
@@ -134,7 +140,7 @@ else{
         </div>
     </div>
 
-    <img src="<?=img('romances.png')?>" id="imgp2">
+    <img src="<?=img('romances2.png')?>" id="imgp2">
 
 </main>
 <?php require "Rodape.view.php"?> 

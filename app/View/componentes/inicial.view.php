@@ -1,6 +1,7 @@
 <?php require "topo.view.php" ?>
 
 <main>
+        <?=flash()?>
         <img src="<?=img('rentbooks2.png')?>" id="imgp">
 
         <div id="secao1">

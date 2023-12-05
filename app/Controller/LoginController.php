@@ -36,7 +36,7 @@ class LoginController extends Controller{
         if(ClientesDAO::inserir($usuario)){
             flash("Cadastro realizado com sucesso!");
 
-            redireciona('login');
+            redireciona('');
 
         }
 

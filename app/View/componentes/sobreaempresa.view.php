@@ -15,7 +15,7 @@
 
         </div>
 
-        <img src="<?=img('rentbooks1.png')?>" id="imgp">
+        <img src="<?=img('rentbooks2.png')?>" id="imgp">
 
         <div id="empresa2">
 
