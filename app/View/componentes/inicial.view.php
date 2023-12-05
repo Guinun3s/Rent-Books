@@ -1,7 +1,7 @@
 <?php require "topo.view.php" ?>
 
 <main>
-        <img src="<?=img('rentbooks1.png')?>" id="imgp">
+        <img src="<?=img('rentbooks2.png')?>" id="imgp">
 
         <div id="secao1">
             <div id="secao1_1">
@@ -16,34 +16,34 @@
             <div class="separasecao1">
                 <div class="secao1livro">
                 <a href="<?=url_base('secaolivro?genero=romance')?>"><h2>Romance</h2></a>
-                <a href="<?=url_base('compra')?>?titulo=Orgulho e Preconceito"><img src="<?=imgLivros('orgulhoepreconceito.jpg')?>"></a>
+                <a href="<?=url_base('compra')?>?idLivro=12"><img src="<?=imgLivros('orgulhoepreconceito.jpg')?>"></a>
                 </div>
 
                 <div class="secao1livro">
                 <a href="<?=url_base('secaolivro?genero=fantasia')?>"><h2>Fantasia</h2></a>
-                <a href="<?=url_base('compra')?>?titulo=Nárnia"><img src="<?=imgLivros('narnia.jpg')?>"></a>
+                <a href="<?=url_base('compra')?>?idLivro=21"><img src="<?=imgLivros('narnia.jpg')?>"></a>
                 </div>
 
                 <div class="secao1livro">
                 <a href="<?=url_base('secaolivro?genero=ficção')?>"><h2>Ficção</h2></a>
-                <a href="<?=url_base('compra')?>?titulo=A biblioteca da Meia-noite"><img src="<?=imgLivros('abibliotecadameianoite.jpg')?>"></a>
+                <a href="<?=url_base('compra')?>?idLivro=1"><img src="<?=imgLivros('abibliotecadameianoite.jpg')?>"></a>
                 </div>
             </div>
 
             <div class="separasecao1">
                 <div class="secao1livro">
                 <a href="<?=url_base('secaolivro?genero=clássico')?>"><h2>Clássico</h2></a>
-                <a href="<?=url_base('compra')?>?titulo=Dom Casmurro"><img src="<?=imgLivros('domcasmurro.jpg')?>"></a>
+                <a href="<?=url_base('compra')?>?idLivro=15"><img src="<?=imgLivros('domcasmurro.jpg')?>"></a>
                 </div>
 
                 <div class="secao1livro">
                 <a href="<?=url_base('secaolivro?genero=suspense')?>"><h2>Suspense</h2></a>
-                <a href="<?=url_base('compra')?>?titulo=A Garota do Lago"><img src="<?=imgLivros('agarotadolago.jpg')?>"></a>
+                <a href="<?=url_base('compra')?>?idLivro=2"><img src="<?=imgLivros('agarotadolago.jpg')?>"></a>
                 </div>
 
                 <div class="secao1livro">
                 <a href="<?=url_base('secaolivro?genero=mangá')?>"><h2>Mangá</h2></a>
-                <a href="<?=url_base('compra')?>?titulo=Naruto"><img src="<?=imgLivros('naruto.jpg')?>"></a>
+                <a href="<?=url_base('compra')?>?idLivro=22"><img src="<?=imgLivros('naruto.jpg')?>"></a>
                 </div>
             </div>
             <a class="btn" href="<?=url_base('secaolivro')?>">TODOS OS LIVROS</a>
@@ -66,7 +66,7 @@
 
         </div>
 
-        <img src="<?=img('romances.png')?>" id="imgp">
+        <img src="<?=img('romances2.png')?>" id="imgp">
 
         <div id="secao3">
             <img src="<?=imgLivros('vimoseouvimos.png')?>">

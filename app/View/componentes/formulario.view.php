@@ -1,6 +1,6 @@
 <?php require "topo.view.php" ?>
 <main>
-    <img src="<?=img('misterios.png')?>" id="imgp">
+    <img src="<?=img('misterios2.png')?>" id="imgp">
     
     <h1 id="titform">CADASTRE-SE NO NOSSO SITE!</h1>
     <?=flash()?>

@@ -7,7 +7,7 @@ $livros->modo = "alugar";
 $livros = $dao->filtrarModo($livros->modo);
 ?>
 <main>
-    <img src="<?=img('estudantis.png')?>" id="imgp">
+    <img src="<?=img('estudantis2.png')?>" id="imgp">
     <div id="pesquisa">
         <div id="pesquisa1">
             <img src="<?=img('lupa.png')?>">

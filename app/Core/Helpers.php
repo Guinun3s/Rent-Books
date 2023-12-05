@@ -44,7 +44,7 @@ function addFormData(array $dados){
     $_SESSION['__form'] = $dados;
 }
 
-function linmparFormData($campo = ""){
+function limparFormData($campo = ""){
     if($campo == ""){
        unset($_SESSION['__form']); 
     }else{
@@ -58,9 +58,9 @@ function getValue(string $campo){
     $form = $_SESSION['__form'];
     if(isset($form[$campo])){
         $valor = $form[$campo];
-        linmparFormData($campo);
+        limparFormData($campo);
         return $valor;
     }else{
-        return "";
+        return null;
     }
 }

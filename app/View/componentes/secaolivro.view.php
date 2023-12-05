@@ -1,6 +1,5 @@
 <?php
 
-use Rentbooks\Core\DAO;
 use Rentbooks\model\DAO\LivrosDAO;
 use Rentbooks\Model\Entities\Livro;
 
