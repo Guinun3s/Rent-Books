@@ -23,24 +23,3 @@
             
     </main>
 <?php require "Rodape.view.php" ?> 
-
-<?php
-
-    $itensSQL = "INSERT INTO livros (idLivro, titulo, modo, autor, preco, descricao, genero, vendedor, imagem)"
-    /* 
-            $sql = "INSERT INTO Produto(idProduto, codFornecedor, codLivros)";
-        
-            $dados = [
-                $produto->idProduto,
-                $produto->codFornecedor,
-                $produto->codLivro
-            ];
-
-            
-            */
-
-
-
-
-
-?>
