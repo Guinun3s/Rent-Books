@@ -13,3 +13,5 @@ Router::get('produtos', 'LivrosController', 'produtos');
 Router::get('secaolivro', 'LivrosController', 'secaolivro');
 Router::get('sobreaempresa', 'EmpresaController', 'sobreaempresa');
 Router::post('cadastrarConta', 'LoginController', 'cadastrarConta');
+Router::get('cliente', 'UsuariosController', 'cliente');
+Router::get('fornecedor', 'UsuariosController', 'fornecedor');

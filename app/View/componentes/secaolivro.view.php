@@ -97,11 +97,6 @@ else{
                   <input type="radio" name="preco" value="40">
                   <label for="40">Até R$ 40,00</label>
                 </div>
-                <div>
-                  <label>Digite o preço:
-                    <input type="number" name="precop" step="0.01" id="precop">
-                  </label>
-                </div>
               </fieldset>
               <fieldset class="filtro">
                 <p>Forma de venda:</p>

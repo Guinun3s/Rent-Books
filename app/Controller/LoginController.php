@@ -35,7 +35,6 @@ class LoginController extends Controller{
         $usuario = new Cliente($this->post());
         if(ClientesDAO::inserir($usuario)){
             flash("Cadastro realizado com sucesso!");
-
             redireciona('');
 
         }

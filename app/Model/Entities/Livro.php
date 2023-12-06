@@ -1,8 +1,9 @@
 <?php
 
 namespace Rentbooks\Model\Entities;
+use Rentbooks\Core\Entity;
 
-class Livro{
+class Livro extends Entity{
 
    public ?int $idLivro; 
    public ?string $titulo;

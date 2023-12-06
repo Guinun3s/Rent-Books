@@ -21,7 +21,7 @@ class LivrosDAO extends DAO{
 
     public function filtrarPreco($preco){
         $tabela = static::$tabela;
-        $sql = "SELECT * FROM {$tabela} preco <= ?";
+        $sql = "SELECT * FROM {$tabela} WHERE preco <= ?";
         $banco = new Database;
         $banco->executar($sql, [$preco]);
         return $banco->retorna(Livro::class);

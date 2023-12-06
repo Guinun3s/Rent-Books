@@ -16,6 +16,6 @@ class LivrosController extends Controller{
 
     public function secaolivro(){
         $this->view('secaolivro');
-    }
+        }
 
 }

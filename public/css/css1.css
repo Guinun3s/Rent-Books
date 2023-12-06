@@ -596,7 +596,7 @@ aside div{
 
 .filtro{
     width: 11.5em;
-    border: #01455b solid 1px;
+    border: #13397b solid 1px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -604,12 +604,6 @@ aside div{
     margin-bottom: 1em;
     padding: 0.5em 0em ;
 }
-
-#precop{
-    border: #01455b solid 1px;
-    border-radius: 12px;
-    margin-bottom: 0.5em;
-} 
 
 .filtro p{
     padding: 0em 0em 0.5em 0.5em;
@@ -649,4 +643,10 @@ aside div{
     color: white;
     margin: 1em 6em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#login{
+    border: black, solid, 1px;
+    border-radius: 12px;
+    display: flex;
 }

@@ -1,5 +1,4 @@
 <?php
-
 function css($arquivo)
 {
     return URL_BASE."public/css/{$arquivo}.css";
