@@ -160,3 +160,4 @@ cod_Cliente int not null,
 constraint Fk_Produto foreign key (cod_Produto) references Produto(idProduto),
 constraint Fk_Cliente foreign key (cod_Cliente) references Cliente(idCliente)
 );
+
