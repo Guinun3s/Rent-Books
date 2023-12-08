@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 08/12/2023 às 11:25
--- Versão do servidor: 10.4.28-MariaDB
--- Versão do PHP: 8.2.4
+-- Tempo de geração: 08-Dez-2023 às 20:49
+-- Versão do servidor: 10.4.27-MariaDB
+-- versão do PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `emprestimo`
+-- Estrutura da tabela `emprestimo`
 --
 
 CREATE TABLE `emprestimo` (
@@ -37,7 +37,7 @@ CREATE TABLE `emprestimo` (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `livro`
+-- Estrutura da tabela `livro`
 --
 
 CREATE TABLE `livro` (
@@ -53,7 +53,7 @@ CREATE TABLE `livro` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Despejando dados para a tabela `livro`
+-- Extraindo dados da tabela `livro`
 --
 
 INSERT INTO `livro` (`idLivro`, `titulo`, `modo`, `autor`, `preco`, `descricao`, `genero`, `imagem`, `idUsuario`) VALUES
@@ -104,19 +104,7 @@ INSERT INTO `livro` (`idLivro`, `titulo`, `modo`, `autor`, `preco`, `descricao`,
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `produto`
---
-
-CREATE TABLE `produto` (
-  `idProduto` int(11) NOT NULL,
-  `codUsuario` int(11) NOT NULL,
-  `codLivros` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `usuario`
+-- Estrutura da tabela `usuario`
 --
 
 CREATE TABLE `usuario` (
@@ -136,45 +124,38 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Despejando dados para a tabela `usuario`
+-- Extraindo dados da tabela `usuario`
 --
 
 INSERT INTO `usuario` (`idUsuario`, `nome`, `dataNascimento`, `telefone`, `cpf`, `email`, `senha`, `vendedor`, `cep`, `cidade`, `rua`, `bairro`, `estado`) VALUES
-(1, 'Thiago Miranda dos Santos Souza', '1984-06-20', '7788171554', '01318607558', 'mirandathiago@gmail.com', '12345678', 1, '45051-050', 'VITORIA DA CONQUISTA', 'Rua X', 'X', 'BA');
+(1, 'Thiago Miranda dos Santos Souza', '1984-06-20', '7788171554', '01318607558', 'mirandathiago@gmail.com', '12345678', 1, '45051-050', 'VITORIA DA CONQUISTA', 'Rua X', 'X', 'BA'),
+(2, 'Guilherme Nunes Cangussu', '2023-11-30', '77988720209', '22222222222', 'guilhermenunes3466@gmail.com', '12345678', 1, '46205000', 'Guajeru', 'Chama', 'Centro', 'BA');
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices de tabela `emprestimo`
+-- Índices para tabela `emprestimo`
 --
 ALTER TABLE `emprestimo`
   ADD PRIMARY KEY (`idEmprestimo`);
 
 --
--- Índices de tabela `livro`
+-- Índices para tabela `livro`
 --
 ALTER TABLE `livro`
   ADD PRIMARY KEY (`idLivro`),
   ADD KEY `idUsuario` (`idUsuario`);
 
 --
--- Índices de tabela `produto`
---
-ALTER TABLE `produto`
-  ADD PRIMARY KEY (`idProduto`),
-  ADD KEY `FkUsuario` (`codUsuario`),
-  ADD KEY `FkLivros` (`codLivros`);
-
---
--- Índices de tabela `usuario`
+-- Índices para tabela `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`idUsuario`);
 
 --
--- AUTO_INCREMENT para tabelas despejadas
+-- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
@@ -190,33 +171,20 @@ ALTER TABLE `livro`
   MODIFY `idLivro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
--- AUTO_INCREMENT de tabela `produto`
---
-ALTER TABLE `produto`
-  MODIFY `idProduto` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- Restrições para tabelas despejadas
+-- Restrições para despejos de tabelas
 --
 
 --
--- Restrições para tabelas `livro`
+-- Limitadores para a tabela `livro`
 --
 ALTER TABLE `livro`
   ADD CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuario` (`idUsuario`);
-
---
--- Restrições para tabelas `produto`
---
-ALTER TABLE `produto`
-  ADD CONSTRAINT `FkLivros` FOREIGN KEY (`codLivros`) REFERENCES `livro` (`idLivro`),
-  ADD CONSTRAINT `FkUsuario` FOREIGN KEY (`codUsuario`) REFERENCES `usuario` (`idUsuario`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
