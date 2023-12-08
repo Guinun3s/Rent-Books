@@ -1,10 +1,5 @@
 <?php require "topo.view.php";
-use Rentbooks\model\DAO\LivrosDAO;
-use Rentbooks\Model\Entities\Livro;
-$livros = new Livro();
-$dao = new LivrosDAO();
-$livros->modo = "alugar"; 
-$livros = $dao->filtrarModo($livros->modo);
+
 ?>
 <main>
     <img src="<?=img('estudantis2.png')?>" id="imgp">

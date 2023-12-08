@@ -8,31 +8,26 @@
         <h1 id="h1p">MEU PERFIL</h1>
 
         <div class="pc">
-
             <h1 id="h1pa">Alugados no momento:</h1>
-
-            <div class="pc1">
-                <a href="compra.html">
-                    <img src="imagens/livros/alicenopaisdasmaravilhas.jpg" id="lpv">
-                </a>
-                <h2>Devolução em: 12/12/1212</h2>
+            <div class="pc2">
+                <div>
+                   <img src="<?=imgLivros('alicenopaisdasmaravilhas.jpg')?>" class="lpv">
+                    <h2>Devolução em: 12/12/2023</h2> 
+                </div>
             </div>
-
         </div>
 
+        <div class="pc">
+            <h1 id="h1pa">Livros Comprados:</h1>
             <div class="pc2">
-
-                <h1 id="h1pa">Livros Comprados:</h1>
-
-                <div class="pc1">
-                    <a href="compra.html">
-                        <img src="imagens/livros/acorpurpura.jpg" id="lpv">
-                    </a>
+                <div>
+                    <img src="<?=imgLivros('acorpurpura.jpg')?>" class="lpv">
                     <h2>A Cor Púrpura - Alice Walker</h2>
                 </div>
-
-
             </div>
+        </div>
+        
+
         <div id="links">
             <div>
                 <a href="<?=url_base('produtos')?>">MAIS LIVROS</a>

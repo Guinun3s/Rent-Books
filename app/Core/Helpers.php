@@ -54,7 +54,7 @@ function limparFormData($campo = ""){
 }
 
 function getValue(string $campo){
-    $form = $_SESSION['__form'];
+    $form = $_SESSION['__form'] ?? null;
     if(isset($form[$campo])){
         $valor = $form[$campo];
         limparFormData($campo);

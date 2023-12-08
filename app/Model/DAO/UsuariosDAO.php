@@ -5,6 +5,7 @@ namespace Rentbooks\model\DAO;
 use Rentbooks\Core\DAO;
 use Rentbooks\Core\Database;
 use Rentbooks\Core\Entity;
+use Rentbooks\Model\Entities\Livro;
 use Rentbooks\Model\Entities\Usuario;
 
 class UsuariosDAO extends DAO{
@@ -19,13 +20,24 @@ class UsuariosDAO extends DAO{
         $banco = new Database;
         $sql = "SELECT * FROM {$tabela} WHERE email = '$entidade->email' AND senha = '$entidade->senha'";
         $banco->executar($sql);
-        $_SESSION['usuario'] = $banco->retorna(static::class);
-        if(empty($_SESSION['usuario'])){
+        $usuario = $banco->retorna(static::$classe);
+
+     
+
+        if(!$usuario){
             return false;
         }else{
+            $_SESSION['usuario'] = $usuario->idUsuario;
             return true;
         }
 
+    }
+
+    public static function buscarTodosLivrosUsuario($usuario){
+        $sql = "SELECT * FROM livro WHERE idUsuario = ?";
+        $banco = new Database;
+        $banco->executar($sql,[$usuario->idUsuario]);
+        return $banco->retornaTodos(Livro::class);
     }
     
 }

@@ -6,6 +6,7 @@ use Rentbooks\Core\Controller;
 use Rentbooks\Core\Validator;
 use Rentbooks\model\DAO\LivrosDAO;
 use Rentbooks\Model\DAO\ProdutoDAO;
+use Rentbooks\model\DAO\UsuariosDAO;
 use Rentbooks\Model\Entities\Livro;
 use Rentbooks\Model\Entities\Produto;
 use Rentbooks\Model\Entities\Usuario;
@@ -16,12 +17,41 @@ class LivrosController extends Controller{
         $this->view('compraevenda');
     }
 
+    public function compra(){
+        $id = $_GET['idLivro'] ?? null;
+        $livro = LivrosDAO::buscarId($id);
+        $usuario = UsuariosDAO::buscarId($livro->idUsuario);
+
+       
+
+        $this->view('compra',['livro' => $livro,'dono' => $usuario]);
+    }
+
     public function produtos(){
-        $this->view('produtos');
+
+        $livros = LivrosDAO::filtrarModo('alugar');
+        $this->view('produtos',['livros' => $livros]);
     }
 
     public function secaolivro(){
-        $this->view('secaolivro');
+        $genero = $_GET["genero"] ?? null;
+        $preco = $_GET["preco"] ?? null;
+        $modo = $_GET["modo"] ?? null;
+
+        if($genero){
+            $livros = LivrosDAO::filtrarGenero($genero);
+        }
+        else if($preco){
+            $livros = LivrosDAO::filtrarPreco($preco);
+        }
+        else if($modo){
+            $livros = LivrosDAO::filtrarModo($modo);
+        }
+        else{
+            $livros = LivrosDAO::buscarTodos();
+        }
+
+        $this->view('secaolivro', ['livros' => $livros]);
     }
 
     public function cadastrarLivro(){

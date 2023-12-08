@@ -1,31 +1,4 @@
-<?php
-
-use Rentbooks\model\DAO\LivrosDAO;
-use Rentbooks\Model\Entities\Livro;
-
- require "topo.view.php";
-//require "pesquisa.view.php";
-
-$livros = new Livro();
-$dao = new LivrosDAO();
-$livros->genero = $_GET["genero"] ?? null;
-$livros->preco = $_GET["preco"] ?? null;
-$livros->modo = $_GET["modo"] ?? null;
-
-if($livros->genero){
-  $livros = $dao->filtrarGenero($livros->genero);
-}
-else if($livros->preco){
-  $livros = $dao->filtrarPreco($livros->preco);
-}
-else if($livros->modo){
-  $livros = $dao->filtrarModo($livros->modo);
-}
-else{
-  $livros = LivrosDAO::buscarTodos();
-}
-
-?>
+<?php require "topo.view.php" ?>
 <main>
 
     <div id="pesquisa">

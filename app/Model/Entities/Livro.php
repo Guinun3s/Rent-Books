@@ -12,7 +12,7 @@ class Livro extends Entity{
    public ?float  $preco; 
    public ?string $descricao;
    public ?string $genero;
-   public ?string $vendedor;
+   public ?string $idUsuario;
    public ?string $imagem;
 
    public static function getRegras() : array

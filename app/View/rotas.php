@@ -6,7 +6,7 @@ Router::get('/','HomeController','index');
 Router::get('login', 'LoginController', 'login');
 Router::post('logar', 'LoginController', 'logar');
 Router::get('carrinho', 'CarrinhoController', 'carrinho');
-Router::get('compra', 'CompraController', 'compra');
+Router::get('compra', 'LivrosController', 'compra');
 Router::get('compraevenda', 'LivrosController', 'compraevenda');
 Router::get('cadastrarLivro', 'LivrosController', 'cadastrarLivro');
 Router::post('adicionarLivro', 'LivrosController', 'adicionarLivro');

@@ -2,7 +2,6 @@
 
 namespace Rentbooks\Core;
 
-
 class Database{
 
     protected \PDO $conexao;
@@ -30,7 +29,7 @@ class Database{
     }
 
     public function retorna(string $classe){
-        return $this->stmt->fetchAll(\PDO::FETCH_CLASS,$classe);
+        return $this->stmt->fetchObject($classe);
     }
 
 }
