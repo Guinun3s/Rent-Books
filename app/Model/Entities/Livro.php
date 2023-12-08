@@ -14,4 +14,17 @@ class Livro extends Entity{
    public ?string $genero;
    public ?string $vendedor;
    public ?string $imagem;
+
+   public static function getRegras() : array
+    {
+        return [
+            'titulo' => 'obrigatorio|maiorque::4',
+            'modo' => 'obrigatorio',
+            'autor' => 'obrigatorio',
+            'preco' => 'obrigatorio',
+            'descricao' => 'obrigatorio',
+            'genero' => 'vendedor',
+        ];
+    }
+
 }

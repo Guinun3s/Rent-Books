@@ -7,5 +7,5 @@
         private string $termoResponsabilidade;
         private string $formaPagamento;
         private int $codProduto;
-        private int $codCliente;
+        private int $codUsuario;
     }

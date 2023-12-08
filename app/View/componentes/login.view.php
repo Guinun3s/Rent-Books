@@ -1,23 +1,26 @@
 <?php require "topo.view.php" ?>
-<main class="principal">
-      <div class="">
-        <a class="btn-voltar" href="<?=url_base('')?>">
-            Voltar
-        </a>     
-      </div>    
-    <div class="login">
+<main>
+         
+    <div id="login_1">
       <?=flash()?>
-      <form id="" action="<?=url_base('cliente')?>" method="POST">
-        <h2><i class=""></i> Login</h2>
-        <input type="text" placeholder="Email" name="email" required>
-        <input type="password" placeholder="Senha" name="senha" required>
+      <form id="login" action="<?=url_base('logar')?>" method="POST">
+        <h2 id="login1"> LOGIN</h2>
+        <input type="text" placeholder="Email" name="email" >
+        <input type="password" placeholder="Senha" name="senha" >
+        <div id="butlogin">
         <button class="btnLogin">
           Login
         </button>
         <a href="<?=url_base('formulario')?>" class="btnLogin">
           Cadastrar
         </a>
+      </div>
       </form>
+      <div>
+        <a class="btnVoltar" href="<?=url_base('')?>">
+            Voltar
+        </a>     
+      </div> 
      </div>
     </main>
 <?php require "Rodape.view.php" ?> 

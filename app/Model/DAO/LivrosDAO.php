@@ -4,6 +4,7 @@ namespace Rentbooks\model\DAO;
 
 use Rentbooks\Core\DAO;
 use Rentbooks\Core\Database;
+use Rentbooks\Core\Entity;
 use Rentbooks\Model\Entities\Livro;
 
 class LivrosDAO extends DAO{
@@ -43,5 +44,12 @@ class LivrosDAO extends DAO{
         return $banco->retorna(Livro::class);
     }
 
+    public static function inserirVendedor($usuario, Entity $livro){
+        $tabela = static::$tabela;
+        $sql = "UPDATE {$tabela} SET 'vendedor' = '{$usuario['nome']} - {$usuario['cidade']} / {$usuario['estado']}' WHERE {$livro->id}";
+        $banco = new Database;
+        $banco->executar($sql);
+        return $banco->retorna(Livro::class);
+    }
 
 }

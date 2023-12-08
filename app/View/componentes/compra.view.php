@@ -31,7 +31,7 @@ $livros = LivrosDao::buscarId($livros->idLivro);
 
     <a href="<?=url_base('carrinho')?>" id="adcar">ADICIONAR AO CARRINHO</a>
     
-    <img src="<?=img('romances.png')?>" id="imgpc">
+    <img src="<?=img('romances2.png')?>" id="imgpc">
 
 </main>
 <?php require "Rodape.view.php" ?> 

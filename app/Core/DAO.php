@@ -28,7 +28,7 @@ abstract class DAO{
         $tabela = static::$tabela;
         $banco = new Database;
         $sql = "DELETE FROM {$tabela} WHERE id = ?";
-        return $banco->executar($sql, [$entidade->idCliente]);
+        return $banco->executar($sql, [$entidade->idUsuario]);
     }
 
     public static function inserir(Entity $entidade){

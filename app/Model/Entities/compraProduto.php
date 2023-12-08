@@ -1,10 +1,10 @@
 <?php
 
-    namespace Ifba\Model\Entities;
+namespace Ifba\Model\Entities;
 
-    class CompraProduto{
-        private int $idCompra;
-        private string $formaPagamento;
-        private int $codProduto;
-        private int $codCliente;
-    }
+class CompraProduto{
+    private int $idCompra;
+    private string $formaPagamento;
+    private int $codProduto;
+    private int $codUsuario;
+}

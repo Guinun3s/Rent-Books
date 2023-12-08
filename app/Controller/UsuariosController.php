@@ -6,11 +6,11 @@ use Rentbooks\Core\Controller;
 
 class UsuariosController extends Controller{
 
-    public function cliente(){
-        $this->view('cliente');
+    public function usuario(){
+        $this->view('usuario');
     }
 
-    public function fornecedor(){
-        $this->view('fornecedor');
+    public function painel(){
+        $this->view('painel');
     }   
 }

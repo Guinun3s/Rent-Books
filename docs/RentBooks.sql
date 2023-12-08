@@ -2,8 +2,8 @@ create database RentBooks;
 use RentBooks;
 drop database RentBooks;
 
-drop table livros;
-create table livros(
+drop table livro;
+create table livro(
 idLivro int primary key auto_increment not null,
 titulo varchar(100) not null,
 modo varchar(10) not null,
@@ -15,7 +15,7 @@ vendedor varchar(45) not null,
 imagem varchar(100) not null
 );
 
-INSERT INTO livros (titulo, modo, autor, preco, descricao, genero, vendedor, imagem) VALUES 
+INSERT INTO livro (titulo, modo, autor, preco, descricao, genero, vendedor, imagem) VALUES 
 ('A biblioteca da Meia-noite', 'vender', 'Matt Haigh', 22.99, 'Aos 35 anos, Nora Seed é uma mulher cheia de talentos e poucas conquistas.', 'fantasia', 'Beatriz Lima - Rio Grande / Rio Grande Do Sul', 'http://localhost/Rent-Books/public/imagens/livros/abibliotecadameianoite.jpg'),
 
 ('A Garota do Lago', 'vender', 'Charlie Donlea', 8, 'A Garota do Lago é um romance policial escrito por Charlie Donlea.', 'suspense', 'Joana silva - Jequié / Bahia', 'http://localhost/Rent-Books/public/imagens/livros/agarotadolago.jpg'),
@@ -104,15 +104,16 @@ INSERT INTO livros (titulo, modo, autor, preco, descricao, genero, vendedor, ima
 
 UPDATE livros SET imagem = 'http://localhost/Rent-Books/public/imagens/livros/ossetemaridosdeevelynhugo.jpg' WHERE idLivro = 24; 
 
-drop table cliente;
-create table cliente(
-idCliente int primary key auto_increment not null,
+drop table usuario;
+create table usuario(
+idUsuario int primary key auto_increment not null,
 nome varchar(100) not null,
 dataNascimento date not null,
 telefone varchar(45) not null,
 cpf varchar(11) not null,
 email varchar(45) not null,
 senha varchar(16) not null,
+vendedor int not null,
 cep varchar(45) not null,
 cidade varchar(100)not null,
 rua varchar(45) not null,
@@ -120,43 +121,48 @@ bairro varchar(45) not null,
 numero varchar(11) not null
 );
 
-drop table fornecedor;
-create table fornecedor(
-idFornecedor int primary key auto_increment not null,
-nome varchar(100) not null,
-dataNascimento date not null,
-telefone varchar(45) not null,
-cpf varchar(11) not null,
-email varchar(45) not null,
-senha varchar(16) not null
-);
-
-create table Produto(
-idProduto int primary key not null,
-codFornecedor int not null,
+drop table produto;
+create table produto(
+idProduto int auto_increment primary key not null,
+codUsuario int not null,
 codLivros int not null,
 
-
-constraint FkFornecedor foreign key (codFornecedor) references Fornecedor(idFornecedor),
-constraint FkLivros foreign key (codLivros) references Livros(isbnLivro)
+constraint FkUsuario foreign key (codUsuario) references usuario(idUsuario),
+constraint FkLivros foreign key (codLivros) references livro(idLivro)
 );
 
+/* Não estão sendo utilizados pois não sabemos como utilizar
+drop table alugaProduto;
 create table alugaProduto(
 idAluga int primary key not null,
 formaPagamento varchar(45),
-codProduto int not null,
-codCliente int not null,
+cod_Produto int not null,
+cod_Usuario int not null,
 
-constraint FkProduto foreign key (codProduto) references Produto(idProduto),
-constraint FkCliente foreign key (codCliente) references Cliente(idCliente)
+constraint Fk_Produto foreign key (cod_Produto) references produto(idProduto),
+constraint Fk_Usuario foreign key (cod_Usuario) references usuario(idUsuario)
 );
 
+drop table compraProduto;
 create table compraProduto(
 idCompra int  primary key  not null,
 formaPagamento varchar(45),
-cod_Produto int not null,
-cod_Cliente int not null,
+id_Produto int not null,
+id_Usuario int not null,
 
-constraint Fk_Produto foreign key (cod_Produto) references Produto(idProduto),
-constraint Fk_Cliente foreign key (cod_Cliente) references Cliente(idCliente)
+constraint produto_fk foreign key (id_Produto) references Produto(idProduto),
+constraint usuario_fk foreign key (id_Usuario) references usuario(idUsuario)
 );
+
+drop TABLE carrinhoCompras;
+CREATE TABLE carrinhoCompras (
+idCarrinho INT PRIMARY KEY AUTO_INCREMENT,
+id_usuario INT,
+id_livro INT,
+preco float NOT NULL,
+tipoCompra enum('vender', 'alugar'),
+constraint fkLivro foreign key (id_livro) references livro(idLivro),
+constraint fkUsuario foreign key (id_usuario) references usuario(idUsuario)
+);
+*/
+

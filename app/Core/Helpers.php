@@ -63,3 +63,21 @@ function getValue(string $campo){
         return null;
     }
 }
+
+function usuario($usuario){
+    if($usuario == null){   
+    
+        return 
+            [
+                'nome' => 'Login',
+                'link' => url_base('login')
+            ];
+    
+    }else{
+        return 
+            [
+                'nome' => 'Conta',
+                'link' => url_base('usuario')
+            ];
+    }
+}

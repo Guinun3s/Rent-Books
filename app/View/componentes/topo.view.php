@@ -1,3 +1,6 @@
+<?php
+$resultado = usuario($_SESSION);
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -17,7 +20,7 @@
                 <li><a href="<?=url_base('')?>">Início</a></li>
                 <li><a href="<?=url_base('produtos')?>">Alugue Aqui</a></li>
                 <li><a href="<?=url_base('sobreaempresa')?>">Sobre a Empresa</a></li>
-                <li><a href="<?=url_base('formulario')?>">Área do Cliente</a></li>
+                <li><a href="<?=$resultado['link']?>"><?=$resultado['nome']?></a></li>
                 <li><a href="<?=url_base('carrinho')?>">Carrinho</a></li>
             </ul>
         </nav>

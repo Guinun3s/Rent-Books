@@ -111,9 +111,8 @@ else{
               </fieldset>
               <div id="btns">
                 <button name="filtrar" class="btnForms"> Filtrar </button>
-              <button name="limpar" class="btnForms" href="<?url_base('secaolivro')?>"> Limpar filtro </button>
+                <button name="limpar" class="btnForms" href="<?url_base('secaolivro')?>"> Limpar filtro </button>
               </div>
-              
             </form>
         </aside>
         

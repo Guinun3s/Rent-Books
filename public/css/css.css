@@ -79,7 +79,8 @@
     justify-content: space-between;
     align-items: flex-end;
     background-color: #5ADDD1; 
-    padding: 0em 1.7em;
+    padding: 0em 1.7em;    
+    margin-top: 3em;
 }
 
 #rodape img{
@@ -369,13 +370,19 @@
 }
 
 #forms{
-    margin: 3rem 8rem 4rem 8rem;
+    width: 62em;
+    margin: auto;
+    border: #01455b groove 1px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 #forms p{
     display: flex;
     align-items: flex-start;
-    margin-left: 1rem;
+    margin-bottom: 0.5em;
     color:#0d188f ;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -383,41 +390,55 @@
 }
 
 .forms{
-    border: #01455b groove 1px;
-    border-radius: 12px;
     display: flex;
-    align-items: center;
-    padding: 0.5em;
+    border: none;
+    padding: 1.5rem 1.5rem 0rem;
     min-inline-size: min-content;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-#forms input{
+.inputForms{
     border: #01455b groove 1px;
     border-radius: 12px;
-    margin-left: 1rem;
     width: 70em;
     height: 2.75em;
-    padding: 0.4rem 45rem 0.4rem 0rem;
+    padding: 0.4rem 30rem 0.4rem 0rem;
 }
 
 #forms select{
     margin-left: 1rem;
 }
 
-#msgForms{
+.opcForms{
+    border: #01455b groove 1px;
+    border-radius: 12px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 0.5em;
-    color:#0d188f ;
-    font-weight: bold;
+    min-inline-size: min-content;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.opc{
+    width: 15em;
+    padding: 0.3em 5em;
+    display: flex;
+    align-items: stretch;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.8em;
 }
 
-#msgForms textarea{
+.opc label{
+    margin-right: 0.2em;
+}
+
+#msgForms{
     width: 25em;
     height: 20em;
+    border: #01455b groove 1px;
+    border-radius: 12px;
 }
 
 #titform{
@@ -609,8 +630,19 @@ aside div{
     padding: 0em 0em 0.5em 0.5em;
 }
 
+#btnForms{
+    padding: 0.4rem 1.4rem;
+    margin: 2em 25em;
+    background-color: #2a1783;
+    border: solid 1px white;
+    border-radius: 8px;
+    color:#ffffff;
+    font-size: 1.2em;
+    font-family: 'Dangrek', cursive;
+}
+
 .btnForms{
-    background-color: #ffffff;
+    background-color: white;
     padding: 0.5em;
     font-size: 0.8rem;
     font-family: 'verdana', sans-serif;
@@ -645,8 +677,135 @@ aside div{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#login{
-    border: black, solid, 1px;
-    border-radius: 12px;
+#h1p{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Galindo', cursive;
+    color:#0F0E58;
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+}
+
+#h1pa{
+    font-size: 2.3rem;
+    text-align: left;
+    font-family: 'Dangrek', cursive;
+    color:black;
+    margin-left: 7rem;
+}
+
+.pc1{
+    background-color: #5ADDD1;
+    margin: 0.5rem 7rem 6rem 7rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pc1 img{
+    width: 15rem;
+    margin: 2rem 2rem 0rem 2rem;
+}
+
+.pc1 h2{
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    font-family: 'Galindo', cursive;
+    color:#0F0E58;
+    margin-left: 5rem;
+}
+
+.pc1 h3{
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    font-family: 'Galindo', cursive;
+    color:#0F0E58;
+    margin-left: 5rem;
+}
+
+#links{
+    display: flex;
+    justify-content: space-around;
+    padding: 0em 30em;
+}
+
+#links div{
+    background-color: #E1E541;
+    padding: 1rem 1.5em;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    font-family: 'Dangrek', cursive;
+}
+
+#btnLivro{
+    margin-bottom: 3em;
+}
+
+#btnLivro a{
+    background-color: #E1E541;
+    padding: 1rem 1.5em;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    font-family: 'Dangrek', cursive;
+}
+
+#login{
+    background-color: #5ADDD1;
+    border: #01455b solid 1px;
+    border-radius: 12px;
+    margin: 5em 30rem;    
+    padding: 5em 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login1{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#login_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#0F0E58;
+}
+
+.btnLogin{
+    padding: 0.4rem 1.4rem ;
+    margin-top: 2rem;
+    background-color: #2a1783;
+    border: solid 1px white;
+    border-radius: 8px;
+    margin-right: 0.6rem;
+    color:#ffffff;
+    font-size: 1em;
+    font-family: 'Dangrek', cursive;
+}
+
+#butlogin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#login input{
+    width: 22em;
+    height: 2.3em;
+    margin-top: 0.6rem;
+    border: #01455b groove 1px;
+    border-radius: 8px;
+}
+
+.btnVoltar{
+    background-color: #E1E541;
+    padding: 0.6rem 4rem;
+    font-size: 1.5rem;
+    font-family: 'Dangrek', cursive;
+    color: white;
 }
